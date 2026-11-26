@@ -10,7 +10,7 @@
 
 param(
     [string]$Out = "docs",
-    [int]$MaxAssetMb = 45,
+    [int]$MaxAssetMb = 60,
     [int]$MaxVideoMb = 60,
     [int]$BudgetMb = 650,
     [switch]$SkipMedia,

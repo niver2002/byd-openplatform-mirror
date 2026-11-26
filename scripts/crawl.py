@@ -211,7 +211,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="docs")
     ap.add_argument("--jobs", type=int, default=8)
-    ap.add_argument("--max-asset-mb", type=float, default=45.0)
+    ap.add_argument("--max-asset-mb", type=float, default=60.0)
     ap.add_argument("--max-video-mb", type=float, default=60.0)
     ap.add_argument("--budget-mb", type=float, default=650.0, help="总媒体体积预算")
     ap.add_argument("--max-docs", type=int, default=0, help="limit docs per section (debug)")

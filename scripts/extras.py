@@ -281,7 +281,7 @@ def build_downloads(root: str) -> list[dict]:
         omitted_html = (
             f"<h2>未收录的大体积文件（{len(omitted)}）</h2>"
             '<div class="note">以下文件超过体积预算，未镜像到仓库。链接指向原站（CDN 签名会过期，过期后需到原站对应文档页查看）。'
-            "如需全量收录，可在 Actions 里手动触发工作流并调大 <code>max_video_mb</code>。</div>"
+            "如需全量收录，重跑 <code>scripts/refresh.ps1 -MaxAssetMb 200 -BudgetMb 2000</code> 即可。</div>"
             f"<ul>{lis}</ul>"
         )
     body = f"""
