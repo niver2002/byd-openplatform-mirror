@@ -15,6 +15,7 @@
 | 板块 | 内容 | 规模 |
 | --- | --- | --- |
 | [赛事专区](https://niver2002.github.io/byd-openplatform-mirror/contest/) | 2026 比亚迪智能座舱设计大赛：赛事公告、三条赛道的定位/方向/作品要求/提交规范、奖项与权益、评委阵容、常见问题 Q1–Q10、整屏渲染快照；以及参赛规则、获奖通知说明、大赛权益说明、大赛用户协议、隐私政策、监护人知情同意书、儿童隐私保护声明 | 3 赛道 / 8 篇官方文档 / 9 个页面快照 |
+| [官方赛事资料包](https://niver2002.github.io/byd-openplatform-mirror/contest/pack/) | 官方 `2026比亚迪智能座舱设计大赛资料.zip` 解包：内外饰车体图（座舱空间示意 + 整车 4 视图）、大赛设计说明、LOGO 四联标、汉仪旗黑 3 款字体、`主题&壁纸赛道大赛模版.pix`；含缩略图预览与整包原件下载 | 16 个文件 / 269 MB |
 | [API 库](https://niver2002.github.io/byd-openplatform-mirror/api/) | 车机端 Java 开放 API 全量接口定义：车身状态、行驶数据、车速、能量与模式、全景摄像头、空调、空气质量、发动机、变速箱与制动、门锁、车灯、安全带、雷达、充电、轮胎、仪表、时间、传感器、媒体中心、车辆设置 | 26 篇 / 21 个接口分类 |
 | [开发者文档](https://niver2002.github.io/byd-openplatform-mirror/dev/) | 知识地图、开发者注册认证、开发套件（AIoT 直连/云云对接/云设备/应用分发/主题套件）、AIoT 业务、应用分发业务、主题商店业务、平台协议、营销渠道与规则中心、活动与动态 | 99 篇 |
 | [协议规范](https://niver2002.github.io/byd-openplatform-mirror/protocol/) | 软件开发协议（直连接入、云接入、OTA 升级）与硬件接口规范（螺纹、椅背、中控生态接口） | 19 篇 |
@@ -26,7 +27,7 @@
 [API 全量合集（一页打完）](https://niver2002.github.io/byd-openplatform-mirror/api/all.html) ·
 [API Markdown 合集](https://niver2002.github.io/byd-openplatform-mirror/markdown/byd-api-reference.md)
 
-镜像总量：**约 600 MB**，其中 367 个图片/视频/附件（601 MB）、144 篇文档、147 份原始 JSON。
+镜像总量：**约 590 MB**：144 篇文档 + 147 份原始 JSON + 355 个正文图片/附件（305 MB） + 官方赛事资料包解包 269 MB（`docs/contest/pack/`）。
 
 ## 目录结构
 
@@ -36,6 +37,7 @@ docs/                       ← GitHub Pages 发布目录（生成物，勿手�
 ├── contest/                赛事专区
 │   ├── index.html          赛事主页（公告 / 赛道 / 规则 / 资料清单 / 页面快照）
 │   ├── captured/           无头浏览器渲染的官方页面：DOM、纯文本、整屏截图
+│   ├── pack/               官方赛事资料包解包（PNG / TTF / PIX / DOCX + 缩略图 + manifest）
 │   └── data/               赛事接口原始响应 + 赛道数据 JSON
 ├── api/                    API 库（含 all.html 全量单页合集）
 ├── dev/                    开发者文档（99 篇）
@@ -97,13 +99,28 @@ python scripts/push_batched.py --batch-mb 60
 
 ### 关于「赛事资料包」
 
-官方赛事资源页（`#/theme-competation/resources`）有 5 个条目（三个赛道设计模板、比亚迪品牌素材包、
-车机屏幕尺寸规范），但在前端数据里 `downloadUrl` 全是空字符串，点击提示「资源即将上线，敬请期待」——
-也就是**官方还没放出文件本体**，没有东西可镜像。仓库里收录的是官方**实际可下载**的替代资料：
-主题商店设计模板 `.sketch`/`.pix`、主题审核资料明细、车身开放 API JAR 包、接口清单、准入标准审核表等，
-见[下载页](https://niver2002.github.io/byd-openplatform-mirror/downloads/)。
+赛事资源页（`#/theme-competation/resources`）的 5 个条目在中前台数据里 `downloadUrl` 为空，点击提示
+「资源即将上线，敬请期待」。**但官方真正的资料包是另一个静态文件**：
 
-> 如果你拿到了官方放出的那 5 个资源包，把文件丢进 `docs/downloads/` 再推一次即可，下载页会自动列出。
+```
+https://openplatform.byd.com/2026比亚迪智能座舱设计大赛资料.zip   (253 MB, 2026-11-17)
+```
+
+这个包已经完整镜像，两种取用方式：
+
+- **在线浏览 / 单文件下载** → <https://niver2002.github.io/byd-openplatform-mirror/contest/pack/>
+  解包后 16 个文件共 269 MB：内外饰车体图（座舱空间示意 2 张 + 整车 4 视图 4 张）、
+  大赛设计说明 4 张、LOGO 四联标、汉仪旗黑 3 款字体、`主题&壁纸赛道大赛模版.pix`(82.5 MB)。
+  图片都生成了缩略图，可直接预览。
+- **整包原件下载** → [Release 附件](https://github.com/niver2002/byd-openplatform-mirror/releases/download/contest-pack-2026/byd-2026-cockpit-design-contest-pack.zip)
+  （253 MB，253,566,688 字节，SHA-256 `f62c0547c8d534e92ff6a3604b9340b32047106e66ad9e89a76becd4b4de890`）
+
+压缩包本体超过 git 单文件 100 MB 上限，所以放在 Release 附件里；包内每个文件都单独入库，
+单文件最大 82.5 MB，无需 LFS。此外仓库还镜像了文档中其余 16 个可下载附件（主题商店设计模板
+`.sketch`/`.pix`、审核资料明细、车身开放 API JAR、接口清单、准入审核表等），见
+[下载页](https://niver2002.github.io/byd-openplatform-mirror/downloads/)。
+
+> 官方后续若更新资源包，重跑 `scripts/refresh.ps1` 会重新下载解包；`pack.py` 里的 `PACK_URL` 是固定地址。
 
 ## 版权与免责声明
 
