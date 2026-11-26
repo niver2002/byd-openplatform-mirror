@@ -10,7 +10,11 @@ on:
       max_video_mb:
         description: "单个视频收录上限 (MB)，超过则只在清单里留原始链接"
         required: false
-        default: "15"
+        default: "10"
+      budget_mb:
+        description: "媒体总体积预算 (MB)，防止仓库膨胀"
+        required: false
+        default: "400"
       skip_media:
         description: "只抓文字、跳过图片视频（true/false）"
         required: false
@@ -64,9 +68,10 @@ jobs:
       - name: Crawl documentation, API library and contest data
         env:
           MAX_ASSET_MB: ${{ inputs.max_asset_mb || '45' }}
-          MAX_VIDEO_MB: ${{ inputs.max_video_mb || '15' }}
+          MAX_VIDEO_MB: ${{ inputs.max_video_mb || '10' }}
+          BUDGET_MB: ${{ inputs.budget_mb || '400' }}
         run: |
-          FLAGS="--max-asset-mb ${MAX_ASSET_MB} --max-video-mb ${MAX_VIDEO_MB}"
+          FLAGS="--max-asset-mb ${MAX_ASSET_MB} --max-video-mb ${MAX_VIDEO_MB} --budget-mb ${BUDGET_MB}"
           if [ "${{ inputs.skip_media }}" = "true" ]; then FLAGS="$FLAGS --no-assets"; fi
           python scripts/crawl.py --out docs $FLAGS
 
@@ -85,6 +90,12 @@ jobs:
           du -sh docs/assets docs/downloads docs/raw 2>/dev/null || true
           echo "" >> $GITHUB_STEP_SUMMARY
           find docs -type f | wc -l | xargs echo "文件数:" >> $GITHUB_STEP_SUMMARY
+          SIZE_MB=$(du -sm docs | cut -f1)
+          echo "镜像 ${SIZE_MB} MB" >> $GITHUB_STEP_SUMMARY
+          if [ "$SIZE_MB" -gt 900 ]; then
+            echo "::error::镜像超过 900MB，GitHub Pages 会拒绝发布，请调小 budget_mb"
+            exit 1
+          fi
 
       - name: Commit mirrored content
         if: github.ref == 'refs/heads/main'
