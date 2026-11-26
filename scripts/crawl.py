@@ -148,8 +148,10 @@ class Assets:
             rel = self.map[url]
             dest = os.path.join(self.root, rel)
             if os.path.exists(dest) and os.path.getsize(dest) > 0:
+                existing = os.path.getsize(dest)
                 with lock:
-                    used += os.path.getsize(dest)
+                    used += existing
+                self.size[url] = existing
                 return
             try:
                 data = lib.http_get(self.fetch[url], retries=3, timeout=180)
@@ -371,7 +373,7 @@ def main() -> int:
             )
             lib.write_text(
                 os.path.join(root, slug, f'{d["slug"]}.html'),
-                page(title=d["name"], body=body, depth=2, active=slug, sidebar=build_sidebar(trees, slug, d["id"])),
+                page(title=d["name"], body=body, depth=1, active=slug, sidebar=build_sidebar(trees, slug, d["id"])),
             )
             md_path = os.path.join(root, "markdown", slug, f'{d["slug"]}.md')
             lib.write_text(

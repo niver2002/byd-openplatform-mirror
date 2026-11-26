@@ -438,7 +438,7 @@ def build_api_reference(root: str) -> None:
 """
     lib.write_text(
         os.path.join(root, "api", "all.html"),
-        page(title="API 库全量合集", body=body, depth=2, active="api", sidebar=api_sidebar(api_docs)),
+        page(title="API 库全量合集", body=body, depth=1, active="api", sidebar=api_sidebar(api_docs)),
     )
     lib.write_text(os.path.join(root, "markdown", "byd-api-reference.md"), "\n".join(parts_md))
 
