@@ -138,6 +138,15 @@ def build_contest(root: str, snap: dict, contest_data: dict) -> dict:
         )
 
     captured_html = ""
+    shot = os.path.join(outdir, "captured", "theme-competation-index.png")
+    shot_html = ""
+    if os.path.exists(shot):
+        shot_html = (
+            '<h2 id="shot">官方赛事页整屏快照</h2>'
+            '<p>下面是官方赛事首页在 1440px 宽浏览器中的渲染截图（已存入仓库，不依赖原站）。</p>'
+            '<p><a href="captured/theme-competation-index.png" target="_blank" rel="noopener">'
+            '<img src="captured/theme-competation-index.png" alt="2026 比亚迪智能座舱设计大赛官方页面截图"></a></p>'
+        )
     if captured_txt:
         captured_html = (
             '<h2 id="captured">官方赛事页正文快照</h2>'
