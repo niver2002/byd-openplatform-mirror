@@ -18,7 +18,7 @@
 | [API 库](https://niver2002.github.io/byd-openplatform-mirror/api/) | 车机端 Java 开放 API 全量接口定义：车身状态、行驶数据、车速、能量与模式、全景摄像头、空调、空气质量、发动机、变速箱与制动、门锁、车灯、安全带、雷达、充电、轮胎、仪表、时间、传感器、媒体中心、车辆设置 | 26 篇 / 21 个接口分类 |
 | [开发者文档](https://niver2002.github.io/byd-openplatform-mirror/dev/) | 知识地图、开发者注册认证、开发套件（AIoT 直连/云云对接/云设备/应用分发/主题套件）、AIoT 业务、应用分发业务、主题商店业务、平台协议、营销渠道与规则中心、活动与动态 | 99 篇 |
 | [协议规范](https://niver2002.github.io/byd-openplatform-mirror/protocol/) | 软件开发协议（直连接入、云接入、OTA 升级）与硬件接口规范（螺纹、椅背、中控生态接口） | 19 篇 |
-| [资料包下载](https://niver2002.github.io/byd-openplatform-mirror/downloads/) | 主题商店设计模板 `.sketch` / `.pix`、主题审核资料提供明细 `.xlsx`、车身开放 API `bydauto-openapi.jar`、接口清单 `PDF`/`xlsx`、设备使用手册、手指素材、竞品分析报告、应用软件许可授权书、准入标准审核表、应用测试报告模板等**全部可下载附件** | 15 个文件 |
+| [资料包下载](https://niver2002.github.io/byd-openplatform-mirror/downloads/) | 主题商店设计模板 `.sketch` / `.pix`、主题审核资料提供明细 `.xlsx`、车身开放 API `bydauto-openapi.jar`、接口清单 `PDF`/`xlsx`、设备使用手册、手指素材、竞品分析报告、应用软件许可授权书、准入标准审核表、应用测试报告模板等**全部可下载附件** | 16 个文件 |
 | [Markdown 镜像](https://niver2002.github.io/byd-openplatform-mirror/markdown/) | 全部文档的 Markdown 版本，适合本地笔记 / 知识库 / RAG 语料 | 144 篇 |
 | [全文搜索](https://niver2002.github.io/byd-openplatform-mirror/search.html) | 在全部镜像正文中检索 | — |
 
@@ -26,7 +26,7 @@
 [API 全量合集（一页打完）](https://niver2002.github.io/byd-openplatform-mirror/api/all.html) ·
 [API Markdown 合集](https://niver2002.github.io/byd-openplatform-mirror/markdown/byd-api-reference.md)
 
-镜像总量：**约 550 MB**，其中 366 个图片/视频/附件（553 MB）、144 篇文档、147 份原始 JSON。
+镜像总量：**约 600 MB**，其中 367 个图片/视频/附件（601 MB）、144 篇文档、147 份原始 JSON。
 
 ## 目录结构
 
@@ -60,7 +60,7 @@ scripts/                    采集与构建脚本（纯 Python 标准库，无�
 仓库自带一键脚本：
 
 ```powershell
-# 1) 抓取 + 渲染快照 + 构建站点（约 5 分钟，550 MB）
+# 1) 抓取 + 渲染快照 + 构建站点（约 5 分钟，600 MB）
 pwsh -File scripts/refresh.ps1
 
 # 2) 提交并分批推送（默认 60 MB 一批，失败自动重试）
@@ -76,7 +76,7 @@ python scripts/push_batched.py --batch-mb 60
 
 ### 分批推送为什么必要
 
-整包约 550 MB，单次 `git push` 在跨境链路上很容易被 reset。`push_batched.py` 会把改动切成
+整包约 600 MB，单次 `git push` 在跨境链路上很容易被 reset。`push_batched.py` 会把改动切成
 若干 60 MB 的 commit 依次推送，每批成功即落盘，中途失败不会丢失已完成的部分。
 
 ## 采集自哪些接口
