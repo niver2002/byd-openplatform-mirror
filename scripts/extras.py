@@ -154,7 +154,6 @@ def build_contest(root: str, snap: dict, contest_data: dict) -> dict:
             f'完整 HTML 见 <a href="captured/theme-competation-index.html">captured/theme-competation-index.html</a>。</div>'
             f'<pre style="white-space:pre-wrap;background:var(--code);padding:14px;border-radius:8px;font-size:13.5px;line-height:1.9">{esc(captured_txt)}</pre>'
         )
-
     body = f"""
 <div class="hero">
   <h1>2026 比亚迪智能座舱设计大赛</h1>
@@ -162,6 +161,8 @@ def build_contest(root: str, snap: dict, contest_data: dict) -> dict:
   <p class="meta">数据来源：<a href="{BASE}/#/theme-competation/index" target="_blank" rel="noopener">openplatform.byd.com/#/theme-competation/index</a>
   · 采集时间 {esc(datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC'))}</p>
 </div>
+
+{shot_html}
 
 <h2 id="announcement">赛事公告</h2>
 <ul>{ann_html}</ul>
@@ -183,7 +184,7 @@ def build_contest(root: str, snap: dict, contest_data: dict) -> dict:
 <tbody>{''.join(res_rows)}</tbody></table>
 <p>官方实际可下载的设计规范与模板已收录在 <a href="../downloads/index.html">资料包下载页</a>。</p>
 
-{h2 if False else ''}{captured_html}
+{captured_html}
 
 <h2 id="files">本次赛事相关的可下载文件</h2>
 <ul>
