@@ -55,7 +55,33 @@ def _decode_body(raw: bytes, encoding: str) -> bytes:
     return raw
 
 
+_SAFE_PATH = "/%:@!$&'()*+,;=~"
+_SAFE_QUERY = "=&%:/?@!$'()*+,;~-._"
+
+
+def _safe_url(url: str) -> str:
+    """Percent-encode non-ASCII characters so urllib can send the request.
+
+    Several attachments live under Chinese file names (e.g.
+    /dop/static/theme/template/主题商店设计模板.sketch) which urllib refuses to
+    encode on its own.
+    """
+    parts = urllib.parse.urlsplit(url)
+    if parts.netloc.isascii() and parts.path.isascii() and parts.query.isascii():
+        return url
+    return urllib.parse.urlunsplit(
+        (
+            parts.scheme,
+            parts.netloc,
+            urllib.parse.quote(parts.path, safe=_SAFE_PATH),
+            urllib.parse.quote(parts.query, safe=_SAFE_QUERY),
+            parts.fragment,
+        )
+    )
+
+
 def http_get(url: str, retries: int = 4, timeout: int = 60) -> bytes:
+    url = _safe_url(url)
     last = None
     for attempt in range(retries):
         try:
@@ -137,7 +163,7 @@ def doc_content(doc_id: int) -> str:
 def http_head_size(url: str, timeout: int = 30) -> int | None:
     """Best-effort Content-Length probe; None when the server will not say."""
     try:
-        req = urllib.request.Request(url, headers=HEADERS, method="HEAD")
+        req = urllib.request.Request(_safe_url(url), headers=HEADERS, method="HEAD")
         with urllib.request.urlopen(req, timeout=timeout, context=_CTX) as r:
             raw = r.headers.get("Content-Length")
             return int(raw) if raw and raw.isdigit() else None
@@ -190,15 +216,19 @@ def clean_url(url: str) -> str:
 
 
 def safe_filename(url: str, original_name: str | None = None) -> str:
-    """Stable ascii-only filename; original name preserved in the manifest."""
+    """Readable, filesystem-safe filename that still works as a URL.
+
+    Keeps letters/digits (including CJK, so 主题商店设计模板 survives) and gives
+    every file a short content-independent hash suffix to avoid collisions.
+    """
     name = original_name or urllib.parse.unquote(os.path.basename(urllib.parse.urlparse(url).path))
     base, ext = os.path.splitext(name)
     ext = ext.lower()
-    ascii_base = re.sub(r"[^A-Za-z0-9._-]+", "-", base).strip("-._")
-    if not ascii_base or not re.search(r"[A-Za-z]", ascii_base):
-        ascii_base = "file"
-    ascii_base = ascii_base[:60]
-    return f"{ascii_base}-{sha1(url, 6)}{ext}"
+    cleaned = "".join(ch if (ch.isalnum() or ch in "-_.") else "-" for ch in base)
+    cleaned = re.sub(r"-{2,}", "-", cleaned).strip("-._")
+    if not cleaned:
+        cleaned = "file"
+    return f"{cleaned[:60]}-{sha1(url, 6)}{ext}"
 
 
 def write_text(path: str, text: str) -> None:

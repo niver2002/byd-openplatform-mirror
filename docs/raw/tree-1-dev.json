@@ -1,0 +1,1343 @@
+[
+  {
+    "id": 236,
+    "parentId": null,
+    "name": "知识地图",
+    "summary": "",
+    "documentType": 1,
+    "sortNo": 0,
+    "isLeaf": true,
+    "status": 1,
+    "children": null
+  },
+  {
+    "id": 101,
+    "parentId": null,
+    "name": "开发者注册认证",
+    "summary": "",
+    "documentType": 1,
+    "sortNo": 1,
+    "isLeaf": true,
+    "status": 1,
+    "children": null
+  },
+  {
+    "id": 239,
+    "parentId": null,
+    "name": "开发套件",
+    "summary": "",
+    "documentType": 1,
+    "sortNo": 2,
+    "isLeaf": false,
+    "status": 1,
+    "children": [
+      {
+        "id": 240,
+        "parentId": 239,
+        "name": "AIoT套件",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 1,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 280,
+            "parentId": 240,
+            "name": "直连接入套件",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 1,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 281,
+            "parentId": 240,
+            "name": "云云对接套件",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 2,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 282,
+            "parentId": 240,
+            "name": "云设备接入套件",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 3,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 317,
+            "parentId": 240,
+            "name": "生态硬件接口",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 4,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 241,
+        "parentId": 239,
+        "name": "应用分发套件",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 2,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 354,
+        "parentId": 239,
+        "name": "主题套件",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 3,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 355,
+            "parentId": 354,
+            "name": "主题编辑器使用说明",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 1,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "parentId": null,
+    "name": "AIoT业务",
+    "summary": "",
+    "documentType": 1,
+    "sortNo": 3,
+    "isLeaf": false,
+    "status": 1,
+    "children": [
+      {
+        "id": 1,
+        "parentId": 10,
+        "name": "业务简介",
+        "summary": "原文URL:https://upiwgvvcb4.feishu.cn/docx/CmJ7dlI24oAl2dxb0gGcBZzsn5b",
+        "documentType": 1,
+        "sortNo": 1,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 2,
+        "parentId": 10,
+        "name": "接入指南",
+        "summary": "原文URL:https://upiwgvvcb4.feishu.cn/docx/NKd1dnrJuoTAfwxf1rjcn7FHnyg",
+        "documentType": 1,
+        "sortNo": 2,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 32,
+        "parentId": 10,
+        "name": "创建产品",
+        "summary": "原文URL: https://upiwgvvcb4.feishu.cn/docx/Nqa3duozZoFHFJxp33vc7iEEncS",
+        "documentType": 1,
+        "sortNo": 3,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 64,
+        "parentId": 10,
+        "name": "功能定义",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 4,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 106,
+        "parentId": 10,
+        "name": "固件开发",
+        "summary": "原文URL: https://upiwgvvcb4.feishu.cn/docx/WxNkdcLsQoSPJfxM6BEcL7RAnMh",
+        "documentType": 1,
+        "sortNo": 5,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 31,
+        "parentId": 10,
+        "name": "产品自测",
+        "summary": "原文URL:https://upiwgvvcb4.feishu.cn/docx/FiNzdyTUMopxGRxTMaVcAVJpnjg",
+        "documentType": 1,
+        "sortNo": 6,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 30,
+        "parentId": 10,
+        "name": "产品认证",
+        "summary": "原文URL:https://upiwgvvcb4.feishu.cn/docx/N5tadtJSQor5i9x4MStc0W9VnLb",
+        "documentType": 1,
+        "sortNo": 7,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 38,
+        "parentId": 10,
+        "name": "高阶配置",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 7,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 39,
+            "parentId": 38,
+            "name": "高阶配置概述",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 1,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 334,
+            "parentId": 38,
+            "name": "产品百科",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 2,
+            "isLeaf": false,
+            "status": 1,
+            "children": [
+              {
+                "id": 336,
+                "parentId": 334,
+                "name": "产品百科概述",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 1,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 41,
+                "parentId": 334,
+                "name": "产品说明书设计规范",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 2,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 42,
+                "parentId": 334,
+                "name": "产品主图设计规范",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 3,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 40,
+                "parentId": 334,
+                "name": "产品卖点填写规范",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 5,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              }
+            ]
+          },
+          {
+            "id": 60,
+            "parentId": 38,
+            "name": "手动添加引导",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 3,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "parentId": 10,
+        "name": "合作案例",
+        "summary": "IoT设备的成功合作案例",
+        "documentType": 1,
+        "sortNo": 10,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 284,
+            "parentId": 11,
+            "name": "直连接入",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 1,
+            "isLeaf": false,
+            "status": 1,
+            "children": [
+              {
+                "id": 12,
+                "parentId": 284,
+                "name": "儿童座椅",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 1,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 13,
+                "parentId": 284,
+                "name": "智能眼罩",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 2,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 14,
+                "parentId": 284,
+                "name": "游戏手柄",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 3,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 15,
+                "parentId": 284,
+                "name": "麦克风",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 4,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 17,
+                "parentId": 284,
+                "name": "全景运动相机",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 6,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 237,
+                "parentId": 284,
+                "name": "颈部按摩仪",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 7,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 238,
+                "parentId": 284,
+                "name": "宠物安全座",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 8,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 289,
+                "parentId": 284,
+                "name": "九号滑板车",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 9,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 290,
+                "parentId": 284,
+                "name": "车载空气净化器",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 10,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 292,
+                "parentId": 284,
+                "name": "车载吸尘器",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 11,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 291,
+                "parentId": 284,
+                "name": "腰部按摩仪",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 12,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 293,
+                "parentId": 284,
+                "name": "两用双温冰箱",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 13,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              }
+            ]
+          },
+          {
+            "id": 285,
+            "parentId": 11,
+            "name": "云云对接",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 2,
+            "isLeaf": false,
+            "status": 1,
+            "children": [
+              {
+                "id": 286,
+                "parentId": 285,
+                "name": "车家互联（美的）",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 1,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 16,
+                "parentId": 285,
+                "name": "智能手表",
+                "summary": "",
+                "documentType": 1,
+                "sortNo": 5,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "parentId": null,
+    "name": "应用分发业务",
+    "summary": "",
+    "documentType": 1,
+    "sortNo": 4,
+    "isLeaf": false,
+    "status": 1,
+    "children": [
+      {
+        "id": 20,
+        "parentId": 18,
+        "name": "业务简介",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 1,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 21,
+        "parentId": 18,
+        "name": "接入指南",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 2,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 358,
+        "parentId": 18,
+        "name": "应用分发审核管理规范",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 3,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 24,
+            "parentId": 358,
+            "name": "应用市场审核指南",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 1,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 359,
+            "parentId": 358,
+            "name": "应用审核Checklist",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 2,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 212,
+            "parentId": 358,
+            "name": "功能、兼容性、性能、稳定性测试标准",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 3,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 213,
+            "parentId": 358,
+            "name": "网络安全技术要求",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 4,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 214,
+            "parentId": 358,
+            "name": "数据安全技术要求",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 5,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 215,
+            "parentId": 358,
+            "name": "合规检查要求",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 6,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 216,
+            "parentId": 358,
+            "name": "用户体验验收指标",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 7,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "parentId": 18,
+        "name": "屏幕信息说明",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 4,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 29,
+        "parentId": 18,
+        "name": "特殊行业资质要求",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 5,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 23,
+        "parentId": 18,
+        "name": "合作案例",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 11,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 315,
+            "parentId": 23,
+            "name": "腾讯音乐合作",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 1,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 25,
+            "parentId": 23,
+            "name": "网易云音乐车机版",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 2,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 26,
+            "parentId": 23,
+            "name": "百度地图车机版",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 3,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 27,
+            "parentId": 23,
+            "name": "喜马拉雅车机版",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 4,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 28,
+            "parentId": 23,
+            "name": "哔哩哔哩车机版",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 5,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "parentId": null,
+    "name": "主题商店业务",
+    "summary": "",
+    "documentType": 1,
+    "sortNo": 5,
+    "isLeaf": false,
+    "status": 1,
+    "children": [
+      {
+        "id": 46,
+        "parentId": 45,
+        "name": "业务简介",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 1,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 47,
+        "parentId": 45,
+        "name": "接入指南",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 2,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 54,
+        "parentId": 45,
+        "name": "合作模式",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 3,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 297,
+        "parentId": 45,
+        "name": "主题设计规范与指南",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 4,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 300,
+            "parentId": 297,
+            "name": "主题设计规范",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 2,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 353,
+            "parentId": 297,
+            "name": "主题编辑器使用说明",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 3,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 301,
+            "parentId": 297,
+            "name": "设计模板下载及导出指南",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 4,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 337,
+            "parentId": 297,
+            "name": "优秀作品示例",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 5,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 50,
+        "parentId": 45,
+        "name": "主题评分与审核管理规范",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 5,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 302,
+        "parentId": 45,
+        "name": "主题开发者管理规范",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 6,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 48,
+        "parentId": 45,
+        "name": "合作案例",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 8,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 49,
+            "parentId": 48,
+            "name": "YOMeeDoll企鹅",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 1,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 51,
+            "parentId": 48,
+            "name": "HALUU",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 2,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 52,
+            "parentId": 48,
+            "name": "网易严选香氛",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 3,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 343,
+        "parentId": 45,
+        "name": "比亚迪智能座舱设计大赛",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 9,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 57,
+            "parentId": 343,
+            "name": "参赛规则",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 1,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 58,
+            "parentId": 343,
+            "name": "获奖通知说明",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 2,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 59,
+            "parentId": 343,
+            "name": "大赛权益说明",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 3,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "parentId": null,
+    "name": "平台协议",
+    "summary": "",
+    "documentType": 1,
+    "sortNo": 6,
+    "isLeaf": false,
+    "status": 1,
+    "children": [
+      {
+        "id": 4,
+        "parentId": 9,
+        "name": "用户协议",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 1,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 5,
+        "parentId": 9,
+        "name": "隐私政策",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 2,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 121,
+        "parentId": 9,
+        "name": "AIoT业务协议",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 3,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 147,
+        "parentId": 9,
+        "name": "应用分发业务协议",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 4,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 148,
+        "parentId": 9,
+        "name": "应用分发业务合规承诺",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 5,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 306,
+        "parentId": 9,
+        "name": "主题商店业务协议",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 8,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 347,
+        "parentId": 9,
+        "name": "比亚迪智能座舱设计大赛",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 10,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 55,
+            "parentId": 347,
+            "name": "用户协议",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 1,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 56,
+            "parentId": 347,
+            "name": "隐私政策",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 2,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 62,
+            "parentId": 347,
+            "name": "监护人知情同意书",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 3,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 61,
+            "parentId": 347,
+            "name": "儿童隐私保护声明",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 4,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "parentId": null,
+    "name": "营销渠道",
+    "summary": "",
+    "documentType": 1,
+    "sortNo": 10,
+    "isLeaf": false,
+    "status": 1,
+    "children": [
+      {
+        "id": 35,
+        "parentId": 33,
+        "name": "硬件产品销售渠道",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 1,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 34,
+        "parentId": 33,
+        "name": "三方应用联运服务",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 2,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 63,
+        "parentId": 33,
+        "name": "精品主题营销渠道",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 3,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 36,
+        "parentId": 33,
+        "name": "规则中心",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 4,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 37,
+            "parentId": 36,
+            "name": "管理规则概览",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 0,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 225,
+            "parentId": 36,
+            "name": "第三方商家入驻与退出规则",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 21,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 226,
+            "parentId": 36,
+            "name": "保证金管理规则",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 22,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 227,
+            "parentId": 36,
+            "name": "禁止发布商品及信息明细",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 23,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 228,
+            "parentId": 36,
+            "name": "赠品管理规则",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 24,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 229,
+            "parentId": 36,
+            "name": "第三方商家售后服务管理规则",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 25,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 230,
+            "parentId": 36,
+            "name": "第三方商家发票管理规则",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 26,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 231,
+            "parentId": 36,
+            "name": "交易纠纷仲裁规则",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 27,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 232,
+            "parentId": 36,
+            "name": "第三方商家管理总则",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 28,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 233,
+            "parentId": 36,
+            "name": "第三方商家违规处理规则",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 29,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 234,
+            "parentId": 36,
+            "name": "第三方商家申诉规则",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 30,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 235,
+            "parentId": 36,
+            "name": "知识产权侵权处理规则",
+            "summary": "",
+            "documentType": 1,
+            "sortNo": 31,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "parentId": null,
+    "name": "活动与动态",
+    "summary": "各种生态相关活动、赛事的介绍和入口。",
+    "documentType": 1,
+    "sortNo": 11,
+    "isLeaf": false,
+    "status": 1,
+    "children": [
+      {
+        "id": 53,
+        "parentId": 123,
+        "name": "活动与动态列表",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 1,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 341,
+        "parentId": 123,
+        "name": "荣耀车联，无缝流转",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 15,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 340,
+        "parentId": 123,
+        "name": "比亚迪亮相WAIC2026",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 16,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 339,
+        "parentId": 123,
+        "name": "与肯德基“9分钟人车补能”战略合作",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 17,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 262,
+        "parentId": 123,
+        "name": "比亚迪亮相AWE2026",
+        "summary": "重构“人-车-家”全场景新范式 比亚迪亮相AWE2026",
+        "documentType": 1,
+        "sortNo": 18,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 342,
+        "parentId": 123,
+        "name": "2025智能座舱UI设计大赛圆满收官",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 19,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 338,
+        "parentId": 123,
+        "name": "与美的“人-车-家”战略合作",
+        "summary": "",
+        "documentType": 1,
+        "sortNo": 20,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "parentId": null,
+    "name": "联系我们",
+    "summary": "原文URL:https://upiwgvvcb4.feishu.cn/docx/D3vEdwDOVo2nnuxhNXZccdT4ngf",
+    "documentType": 1,
+    "sortNo": 99,
+    "isLeaf": true,
+    "status": 1,
+    "children": null
+  }
+]

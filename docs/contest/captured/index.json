@@ -1,0 +1,47 @@
+[
+  {
+    "name": "home",
+    "url": "https://openplatform.byd.com/",
+    "chars": 1841
+  },
+  {
+    "name": "theme-competation-index",
+    "url": "https://openplatform.byd.com/#/theme-competation/index",
+    "chars": 2841
+  },
+  {
+    "name": "theme-competation-announcement",
+    "url": "https://openplatform.byd.com/#/theme-competation/announcement",
+    "chars": 261
+  },
+  {
+    "name": "theme-competation-resources",
+    "url": "https://openplatform.byd.com/#/theme-competation/resources",
+    "chars": 174
+  },
+  {
+    "name": "theme-competation-track-interaction",
+    "url": "https://openplatform.byd.com/#/theme-competation/track/interaction",
+    "chars": 268
+  },
+  {
+    "name": "theme-competation-track-cabin-theme",
+    "url": "https://openplatform.byd.com/#/theme-competation/track/cabin-theme",
+    "chars": 280
+  },
+  {
+    "name": "theme-competation-track-wallpaper",
+    "url": "https://openplatform.byd.com/#/theme-competation/track/wallpaper",
+    "chars": 234
+  },
+  {
+    "name": "theme-competation-works",
+    "url": "https://openplatform.byd.com/#/theme-competation/works",
+    "chars": 32
+  },
+  {
+    "name": "theme-competation-index.png",
+    "url": "https://openplatform.byd.com",
+    "chars": 0
+  }
+]

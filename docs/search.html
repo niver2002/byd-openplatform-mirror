@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>搜索 · 比亚迪生态开放平台 · 资料镜像</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="top"><div class="inner">
+  <a class="brand" href="index.html">比亚迪生态开放平台 · 资料镜像</a>
+  <nav><a href="">首页</a><a href="contest/">赛事</a><a href="api/">API 库</a><a href="dev/">开发者文档</a><a href="protocol/">协议规范</a><a href="downloads/">资料包</a><a href="search.html" class="on">搜索</a></nav>
+</div></header>
+<div class="wrap">
+
+<main>
+
+<div class="hero"><h1>全文搜索</h1><p>在全部镜像文档中检索标题与正文。</p></div>
+<input id="q" type="search" placeholder="输入关键字，例如：空调、getAutoVIN、主题、监护人…" autofocus>
+<p id="st" class="meta" style="margin-top:10px">共 0 条</p>
+<div id="hits"></div>
+<script>
+let DATA = [];
+fetch('search.json').then(r=>r.json()).then(d=>{DATA=d;document.getElementById('st').textContent='共 '+d.length+' 条文档，输入关键字开始检索';});
+const q = document.getElementById('q');
+const hits = document.getElementById('hits');
+const st = document.getElementById('st');
+function run(){
+  const kw = q.value.trim().toLowerCase();
+  if(!kw){ hits.innerHTML=''; st.textContent='共 '+DATA.length+' 条文档，输入关键字开始检索'; return; }
+  const parts = kw.split(/\s+/).filter(Boolean);
+  const res = DATA.filter(d=>{
+    const hay = (d.t+' '+d.c+' '+(d.x||'')).toLowerCase();
+    return parts.every(p=>hay.includes(p));
+  }).slice(0,200);
+  st.textContent = '匹配 '+res.length+' 条';
+  hits.innerHTML = res.map(d=>{
+    const hay=(d.x||''); let i=hay.toLowerCase().indexOf(parts[0]); if(i<0)i=0;
+    const snip = (i>40?'…':'')+hay.slice(Math.max(0,i-40), Math.max(0,i-40)+160)+(hay.length>i+200?'…':'');
+    return `<div class="hit"><div class="h"><a href="${d.u}">${d.t}</a> <span class="tag">${d.c||d.s}</span></div>
+      <div class="s">${snip}</div></div>`;
+  }).join('') || '<div class="note">没有匹配结果。</div>';
+}
+q.addEventListener('input', run);
+</script>
+
+</main>
+</div>
+<footer>
+镜像站 · 内容采集自 <a href="https://openplatform.byd.com/" target="_blank" rel="noopener">openplatform.byd.com</a> ·
+版权归比亚迪汽车工业有限公司所有，本站仅为参赛者与开发者离线查阅便利而归档，如涉侵权请联系删除。
+</footer>
+</body>
+</html>

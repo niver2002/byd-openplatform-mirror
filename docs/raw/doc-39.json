@@ -1,0 +1,11 @@
+{
+  "id": 39,
+  "documentType": 1,
+  "breadcrumb": [
+    "AIoT业务",
+    "高阶配置",
+    "高阶配置概述"
+  ],
+  "sourceUrl": "https://openplatform.byd.com/#/document/index?id=39",
+  "html": "<h1><span style=\"color: rgb(38, 38, 38); font-size: 22px; font-family: 微软雅黑;\"><strong>高阶配置概述</strong></span></h1><p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">比亚迪生态开放平台的高阶配置功能，专为接入车机智慧物联App的智能设备设计。高阶配置包括：</span></p><ul><li style=\"line-height: 2;\"><a href=\"#/document/index?id=336\" target=\"_blank\"><span style=\"font-size: 16px; font-family: 微软雅黑;\">产品百科</span></a><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">：配置产品说明书、产品主图、产品卖点文案，该信息在车机智慧物联App呈现，并且支持国际化配置。</span></li><li style=\"line-height: 2;\"><a href=\"#/document/index?id=335\" target=\"_blank\"><span style=\"font-size: 16px; font-family: 微软雅黑;\">手动添加引导</span></a><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">：配置设备联网图示，设备初始化说明等，该信息将引导用户在车机智慧物联App中添加产品，并且支持国际化配置。</span></li></ul><p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">注意：高阶配置中每一项可以单独提交审核。如审核未通过，需要修改后重新提交。</span></p><p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">高阶配置路径：【</span><a href=\"#/product/productList\" target=\"_blank\"><span style=\"font-size: 16px; font-family: 微软雅黑;\">管理中心-AIoT服务平台-产品接入-产品管理</span></a><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">】选择您的产品，进入“产品开发”，产品接入流程如下图左侧，其中高阶配置如下图：</span></p><p style=\"text-align: center; line-height: 1.75;\"><img src=\"https://openplatform-cdn.byd.com/dop/document-admin/document/3d643764a4f54420929d915c308a0fd2.png?auth_key=1795675071-9bcbeb8c607043fdbb9686e7f8bb94b4-0-c8c8386bf112c4be730a0af2930a0f2a08a79ee32f282aafadc83988cc5eee93\" alt=\"image.png\" data-href=\"\" width=\"\" height=\"\" style=\"\"></p><p style=\"text-align: center; line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 15px; font-family: 微软雅黑;\">图 1-1 高阶配置</span></p>"
+}

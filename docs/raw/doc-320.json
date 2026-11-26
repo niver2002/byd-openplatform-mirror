@@ -1,0 +1,12 @@
+{
+  "id": 320,
+  "documentType": 2,
+  "breadcrumb": [
+    "软件开发协议",
+    "直连接入协议",
+    "比亚迪智能设备开放接入协议",
+    "文件传输概述"
+  ],
+  "sourceUrl": "https://openplatform.byd.com/#/document/index?id=320",
+  "html": "<h1 style=\"line-height: 1.75;\"><span style=\"color: rgb(38, 38, 38); font-size: 22px; font-family: 微软雅黑;\"><strong>文件传输概述</strong></span></h1><p style=\"line-height: 1.75;\"><span style=\"color: rgb(38, 38, 38); font-size: 20px; font-family: 微软雅黑;\"><strong>1. 文件传输适用场景</strong></span></p><p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">文件传输服务 ftx 用于传输超过单条消息承载能力的数据，典型场景包括：</span></p><ul><li style=\"color: rgb(89, 89, 89); line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">WiFi 配网凭据</span></li><li style=\"color: rgb(89, 89, 89); line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">配置文件（JSON/INI）</span></li><li style=\"color: rgb(89, 89, 89); line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">日志片段</span></li></ul><h2 style=\"line-height: 1.75;\"><span style=\"color: rgb(38, 38, 38); font-size: 20px; font-family: 微软雅黑;\"><strong>2. 传输流程概览</strong></span></h2><pre><code >发送端 → ftx.send (首片)\n         → 携带 fid + fname + ftype + enc_mode + iv + tag + data\n接收端 → ACK (result=0 成功 / result=1 重传)\n发送端 → ftx.send (中间片)\n        → 携带 fid + frag_index + data\n接收端 → ACK\n发送端 → ftx.send (末片)\n接收端 → ftx.done 事件（传输完成）</code></pre><h2 style=\"line-height: 1.75;\"><span style=\"color: rgb(38, 38, 38); font-size: 20px; font-family: 微软雅黑;\"><strong>9.3 详细实现参考</strong></span></h2><p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">文件传输的详细技术实现（分片参数、ACK 机制、加密文件传输等）请参考：《AutoIoT 文件传输技术实现》。</span></p>"
+}

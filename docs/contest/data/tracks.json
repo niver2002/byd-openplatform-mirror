@@ -1,0 +1,126 @@
+{
+  "_source": "https://openplatform.byd.com/assets/data-wZb2jLnm.js (bundled by the site as the 赛事 data module)",
+  "_captured_at": "2026-11-26",
+  "nav": [
+    {
+      "key": "home",
+      "label": "首页"
+    },
+    {
+      "key": "interaction",
+      "label": "座舱交互前瞻赛道"
+    },
+    {
+      "key": "cabin-theme",
+      "label": "座舱主题赛道"
+    },
+    {
+      "key": "wallpaper",
+      "label": "亲子壁纸赛道"
+    },
+    {
+      "key": "download",
+      "label": "赛事资料下载"
+    }
+  ],
+  "tracks": {
+    "interaction": {
+      "id": "interaction",
+      "name": "座舱交互前瞻赛道",
+      "banner": "/主题大赛设计文档/赛事详情页_座舱交互前瞻赛道@2x.png",
+      "description": "探索未来智能座舱的交互方式，以创新的设计理念重新定义人车交互体验。鼓励参赛者运用前沿技术，打造具有前瞻性的交互方案。",
+      "requirements": [
+        "作品需包含至少3个交互场景设计",
+        "需提供交互流程图和界面效果图",
+        "鼓励提交动态演示视频（MP4格式）",
+        "作品需保存为RGB模式，支持JPG/PNG格式"
+      ],
+      "submissionSpec": [
+        "主视觉概念图（必选）",
+        "桌面效果图（必选）",
+        "应用中心效果图（必选）",
+        "创意交互视频（建议提交）",
+        "作品创作说明（100字以内）"
+      ]
+    },
+    "cabin-theme": {
+      "id": "cabin-theme",
+      "name": "座舱主题赛道",
+      "banner": "/主题大赛设计文档/赛事详情页_座舱主题赛道@2x.png",
+      "description": "为比亚迪智能座舱设计主题方案，涵盖壁纸、图标、熄屏、语音形象等多个设计模块，打造统一的座舱视觉体验。",
+      "requirements": [
+        "作品需至少选择3个模块进行设计（其中壁纸、图标为必选）",
+        "模块包括：壁纸、图标、熄屏、语音形象、开机动画、仪表盘等",
+        "作品需保存为RGB模式，支持JPG/PNG格式",
+        "鼓励上传MP4格式视频展示动效"
+      ],
+      "submissionSpec": [
+        "主视觉概念图（必选）",
+        "桌面效果图（必选）",
+        "应用中心效果图（必选）",
+        "创意交互视频（可选）",
+        "作品创作说明（100字以内）"
+      ]
+    },
+    "wallpaper": {
+      "id": "wallpaper",
+      "name": "亲子壁纸赛道",
+      "banner": "/主题大赛设计文档/赛事详情页_亲子壁纸赛道@2x.png",
+      "description": "以亲子互动为主题，设计温馨有趣的座舱壁纸作品。鼓励家长与孩子共同参与，发挥创意，打造充满爱与想象力的视觉作品。",
+      "requirements": [
+        "作品需以亲子互动为主题",
+        "壁纸需适配车机屏幕分辨率",
+        "作品需保存为RGB模式，支持JPG/PNG格式",
+        "未成年人参赛需监护人签署授权协议"
+      ],
+      "submissionSpec": [
+        "壁纸设计图（必选）",
+        "创作说明（100字以内）",
+        "监护人授权协议（未成年人必选）"
+      ]
+    }
+  },
+  "resources": [
+    {
+      "id": "1",
+      "name": "座舱主题赛道设计模板",
+      "type": "template",
+      "size": "45MB",
+      "format": "PSD",
+      "downloadUrl": ""
+    },
+    {
+      "id": "2",
+      "name": "交互前瞻赛道设计模板",
+      "type": "template",
+      "size": "38MB",
+      "format": "Sketch",
+      "downloadUrl": ""
+    },
+    {
+      "id": "3",
+      "name": "亲子壁纸赛道设计模板",
+      "type": "template",
+      "size": "25MB",
+      "format": "PSD",
+      "downloadUrl": ""
+    },
+    {
+      "id": "4",
+      "name": "比亚迪品牌素材包",
+      "type": "material",
+      "size": "120MB",
+      "format": "AI/PNG",
+      "downloadUrl": ""
+    },
+    {
+      "id": "5",
+      "name": "车机屏幕尺寸规范",
+      "type": "material",
+      "size": "5MB",
+      "format": "PDF",
+      "downloadUrl": ""
+    }
+  ],
+  "_resource_note": "赛事资源下载页面（#/theme-competation/resources）的资源条目的 downloadUrl 字段在站点前端数据中为空字符串，点击时前端提示“资源即将上线，敬请期待”。因此官方尚未放出上述 5 个资源包文件本体。本站已镜像官方实际可下载的替代资料（主题商店设计模板 sketch/pix、主题审核资料明细 xlsx、车身开放 API JAR 包等），见下载页。"
+}

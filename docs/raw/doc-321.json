@@ -1,0 +1,12 @@
+{
+  "id": 321,
+  "documentType": 2,
+  "breadcrumb": [
+    "软件开发协议",
+    "直连接入协议",
+    "比亚迪智能设备开放接入协议",
+    "OTA 升级概述"
+  ],
+  "sourceUrl": "https://openplatform.byd.com/#/document/index?id=321",
+  "html": "<h1 style=\"line-height: 1.75;\"><span style=\"color: rgb(38, 38, 38); font-size: 22px; font-family: 微软雅黑;\"><strong>OTA 升级概述</strong></span></h1><h2 style=\"line-height: 1.75;\"><span style=\"color: rgb(38, 38, 38); font-size: 20px; font-family: 微软雅黑;\"><strong>1. OTA 流程概览</strong></span></h2><p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">OTA 升级分四个阶段：</span></p><pre><code >1. 开始传包 (ota.start)\n→ 通知设备目标版本、总帧数、校验码\n→ 设备预检（电量、空间、是否在使用）\n\n2. 发送数据 (ota.send_data)\n→ 逐帧发送固件数据\n→ 设备逐帧确认\n\n3. 设备激活\n→ 校验固件 → 重启 → 分区激活（A/B 或备份）\n\n4. 上报结果 (ota.report)→ 重新连接后查询升级结果</code></pre><h2 style=\"line-height: 1.75;\"><span style=\"color: rgb(38, 38, 38); font-size: 20px; font-family: 微软雅黑;\"><strong>2. 详细实现参考</strong></span></h2><p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">OTA 升级的详细技术实现（命令参数、超时策略、断点续传、A/B 分区处理等）请参考：《AutoIoT OTA 升级技术实现》。</span></p>"
+}

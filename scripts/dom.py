@@ -148,12 +148,25 @@ def rewrite_tree(root: Node, resolver) -> None:
         rewrite_tree(child, resolver)
 
 
+BLOCK_TAGS = {
+    "p", "div", "section", "article", "header", "footer", "main", "aside", "nav",
+    "h1", "h2", "h3", "h4", "h5", "h6", "li", "ul", "ol", "tr", "table", "thead",
+    "tbody", "blockquote", "pre", "figure", "figcaption", "dl", "dt", "dd", "br", "hr",
+}
+
+
 def text_of(node: Node) -> str:
+    """Visible text; block-level elements become line breaks."""
     if node.tag is None:
         return node.text
     if node.tag == "#drop":
         return ""
-    return "".join(text_of(c) for c in node.children)
+    inner = "".join(text_of(c) for c in node.children)
+    if node.tag in BLOCK_TAGS:
+        if node.tag == "br":
+            return "\n"
+        return inner + "\n"
+    return inner
 
 
 # ---------------------------------------------------------------- html render

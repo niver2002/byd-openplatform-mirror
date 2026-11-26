@@ -1,0 +1,283 @@
+[
+  {
+    "id": 44,
+    "parentId": null,
+    "name": "软件开发协议",
+    "summary": "",
+    "documentType": 2,
+    "sortNo": 7,
+    "isLeaf": false,
+    "status": 1,
+    "children": [
+      {
+        "id": 8,
+        "parentId": 44,
+        "name": "直连接入协议",
+        "summary": "",
+        "documentType": 2,
+        "sortNo": 1,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 6,
+            "parentId": 8,
+            "name": "比亚迪智能设备开放接入协议",
+            "summary": "本文档描述了IoT设备接入座舱所需实现的BLE GATT协议及数据格式。",
+            "documentType": 2,
+            "sortNo": 1,
+            "isLeaf": false,
+            "status": 1,
+            "children": [
+              {
+                "id": 109,
+                "parentId": 6,
+                "name": "文档介绍",
+                "summary": "注意：不可删除，研发代码写死直接跳转到id",
+                "documentType": 2,
+                "sortNo": 1,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 110,
+                "parentId": 6,
+                "name": "总体设计",
+                "summary": "",
+                "documentType": 2,
+                "sortNo": 2,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 111,
+                "parentId": 6,
+                "name": "BLE 传输层规范",
+                "summary": "",
+                "documentType": 2,
+                "sortNo": 3,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 112,
+                "parentId": 6,
+                "name": "物模型 Profile 规范",
+                "summary": "",
+                "documentType": 2,
+                "sortNo": 4,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 113,
+                "parentId": 6,
+                "name": "消息交互规范",
+                "summary": "",
+                "documentType": 2,
+                "sortNo": 5,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 114,
+                "parentId": 6,
+                "name": "编码与数据格式",
+                "summary": "",
+                "documentType": 2,
+                "sortNo": 6,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 115,
+                "parentId": 6,
+                "name": "分片机制",
+                "summary": "",
+                "documentType": 2,
+                "sortNo": 7,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 319,
+                "parentId": 6,
+                "name": "安全服务概述",
+                "summary": "",
+                "documentType": 2,
+                "sortNo": 8,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 320,
+                "parentId": 6,
+                "name": "文件传输概述",
+                "summary": "",
+                "documentType": 2,
+                "sortNo": 9,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 321,
+                "parentId": 6,
+                "name": "OTA 升级概述",
+                "summary": "",
+                "documentType": 2,
+                "sortNo": 10,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              },
+              {
+                "id": 322,
+                "parentId": 6,
+                "name": "错误码、常见问题与注意事项",
+                "summary": "",
+                "documentType": 2,
+                "sortNo": 11,
+                "isLeaf": true,
+                "status": 1,
+                "children": null
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "parentId": 8,
+            "name": "BYD乘用车IoT设备OTA升级协议",
+            "summary": "本文档描述了BYD座舱的IoT设备，所需实现的OTA升级协议及数据格式。",
+            "documentType": 2,
+            "sortNo": 2,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 277,
+        "parentId": 44,
+        "name": "云接入协议",
+        "summary": "",
+        "documentType": 2,
+        "sortNo": 2,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 278,
+            "parentId": 277,
+            "name": "比亚迪智能设备云云对接协议",
+            "summary": "本文档描述了比亚迪云面向第三方企业云接入智能设备的协议和数据格式。",
+            "documentType": 2,
+            "sortNo": 1,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 279,
+            "parentId": 277,
+            "name": "比亚迪智能云设备接入协议",
+            "summary": "本文档描述了第三方云设备接入比亚迪云的协议和数据格式。",
+            "documentType": 2,
+            "sortNo": 2,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "parentId": null,
+    "name": "硬件接口规范",
+    "summary": "",
+    "documentType": 2,
+    "sortNo": 8,
+    "isLeaf": false,
+    "status": 1,
+    "children": [
+      {
+        "id": 310,
+        "parentId": 43,
+        "name": "生态硬件接口",
+        "summary": "",
+        "documentType": 2,
+        "sortNo": 1,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 311,
+            "parentId": 310,
+            "name": "概述",
+            "summary": "",
+            "documentType": 2,
+            "sortNo": 1,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 312,
+            "parentId": 310,
+            "name": "外接件一般约束",
+            "summary": "",
+            "documentType": 2,
+            "sortNo": 2,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 313,
+            "parentId": 310,
+            "name": "螺纹生态接口（供电）",
+            "summary": "",
+            "documentType": 2,
+            "sortNo": 3,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 314,
+            "parentId": 310,
+            "name": "椅背生态接口",
+            "summary": "",
+            "documentType": 2,
+            "sortNo": 4,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 318,
+            "parentId": 310,
+            "name": "中控生态接口",
+            "summary": "",
+            "documentType": 2,
+            "sortNo": 5,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      }
+    ]
+  }
+]

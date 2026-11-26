@@ -1,0 +1,312 @@
+[
+  {
+    "id": 22,
+    "parentId": null,
+    "name": "API库",
+    "summary": "",
+    "documentType": 3,
+    "sortNo": 7,
+    "isLeaf": false,
+    "status": 1,
+    "children": [
+      {
+        "id": 138,
+        "parentId": 22,
+        "name": "概述",
+        "summary": "",
+        "documentType": 3,
+        "sortNo": 1,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 139,
+        "parentId": 22,
+        "name": "接口说明",
+        "summary": "",
+        "documentType": 3,
+        "sortNo": 2,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 140,
+        "parentId": 22,
+        "name": "键值说明",
+        "summary": "",
+        "documentType": 3,
+        "sortNo": 3,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 142,
+        "parentId": 22,
+        "name": "其他说明",
+        "summary": "",
+        "documentType": 3,
+        "sortNo": 5,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 134,
+        "parentId": 22,
+        "name": "API接口定义",
+        "summary": "",
+        "documentType": 3,
+        "sortNo": 6,
+        "isLeaf": false,
+        "status": 1,
+        "children": [
+          {
+            "id": 135,
+            "parentId": 134,
+            "name": "车身状态类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 1,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 178,
+            "parentId": 134,
+            "name": "行驶数据类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 2,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 179,
+            "parentId": 134,
+            "name": "车速类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 3,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 180,
+            "parentId": 134,
+            "name": "能量、模式类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 4,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 181,
+            "parentId": 134,
+            "name": "全景、 摄像头类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 5,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 183,
+            "parentId": 134,
+            "name": "空调类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 6,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 185,
+            "parentId": 134,
+            "name": "空气质量类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 8,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 186,
+            "parentId": 134,
+            "name": "发动机类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 9,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 187,
+            "parentId": 134,
+            "name": "变速箱、制动类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 10,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 188,
+            "parentId": 134,
+            "name": "门锁类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 11,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 189,
+            "parentId": 134,
+            "name": "车灯类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 12,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 190,
+            "parentId": 134,
+            "name": "安全带类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 13,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 191,
+            "parentId": 134,
+            "name": "雷达类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 14,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 192,
+            "parentId": 134,
+            "name": "充电类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 15,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 193,
+            "parentId": 134,
+            "name": "轮胎类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 16,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 194,
+            "parentId": 134,
+            "name": "仪表类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 17,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 195,
+            "parentId": 134,
+            "name": "时间类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 18,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 196,
+            "parentId": 134,
+            "name": "传感器类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 19,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 197,
+            "parentId": 134,
+            "name": "媒体中心类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 20,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          },
+          {
+            "id": 198,
+            "parentId": 134,
+            "name": "车辆设置类",
+            "summary": "",
+            "documentType": 3,
+            "sortNo": 21,
+            "isLeaf": true,
+            "status": 1,
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 182,
+        "parentId": 22,
+        "name": "JAR包下载",
+        "summary": "",
+        "documentType": 3,
+        "sortNo": 7,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      },
+      {
+        "id": 352,
+        "parentId": 22,
+        "name": "车机开放接口安全声明",
+        "summary": "",
+        "documentType": 3,
+        "sortNo": 8,
+        "isLeaf": true,
+        "status": 1,
+        "children": null
+      }
+    ]
+  }
+]

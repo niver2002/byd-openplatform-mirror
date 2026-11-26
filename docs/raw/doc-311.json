@@ -1,0 +1,11 @@
+{
+  "id": 311,
+  "documentType": 2,
+  "breadcrumb": [
+    "硬件接口规范",
+    "生态硬件接口",
+    "概述"
+  ],
+  "sourceUrl": "https://openplatform.byd.com/#/document/index?id=311",
+  "html": "<p><span style=\"color: rgb(38, 38, 38); font-size: 22px; font-family: 微软雅黑;\"><strong>概述</strong></span> </p><p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">生态硬件接口作为汽车智能座舱实现硬件即插即用、场景按需组合、生态开放增值的核心技术载体，依据车规级可靠性、EMC兼容性及模块化拓展要求，明确螺纹生态接口（供电）、中控生态接口、椅背生态接口的结构公差、机械特性、电气特性、协议适配，构建起固定、快拆、盲插的全场景连接能力体系，推动座舱硬件向车规级模块化、灵活拓展的技术架构升级，最终支撑个性化座舱场景定制、第三方生态资源接入与商业价值增值的全业务闭环。</span></p>"
+}

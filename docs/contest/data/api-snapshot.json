@@ -1,0 +1,52 @@
+{
+  "announcement": {
+    "code": 0,
+    "message": "成功",
+    "success": true,
+    "result": [
+      {
+        "id": 5,
+        "name": "比亚迪智能座舱设计大赛",
+        "content": "2026 比亚迪智能座舱设计大赛 · 亲子壁纸赛道征集中",
+        "linkUrl": "/linkpage/6",
+        "sort": 1,
+        "startTime": "2026-11-20 00:00:00",
+        "endTime": "2026-11-30 23:59:59"
+      }
+    ]
+  },
+  "activities": {
+    "code": 0,
+    "message": "成功",
+    "success": true,
+    "result": [
+      {
+        "id": 3,
+        "name": "主题编辑器",
+        "brief": "主题编辑器正式上线 | 个性化座舱等你来设计",
+        "imageUrl": "https://openplatform-cdn.byd.com/dop/document-admin/activity/29ebdf15c3834be982c697e402e3ff4e.jpg?auth_key=1795675136-7b361f73c66f4623acc1a02f18c09d5f-0-2ccf264b36e6005717559afbbfa33ca9f74800f93640a7c2b9b9a5647160c259",
+        "position": "RIGHT",
+        "jumpUrl": "/manage-center/index"
+      },
+      {
+        "id": 6,
+        "name": "2026 比亚迪智能座舱设计大赛",
+        "brief": "2026 比亚迪智能座舱设计大赛",
+        "imageUrl": "https://openplatform-cdn.byd.com/dop/document-admin/activity/28790894b4f74936b07035394be92fa0.png?auth_key=1795675136-b1932140f0e04bef896bd6b607b24081-0-517866faeaf1ebc7628ad7afa5700571a38276cbe3e141dad1e5d22a26aafb8b",
+        "position": "LEFT",
+        "jumpUrl": "/theme-competation/index"
+      }
+    ]
+  },
+  "advertisement_1": {
+    "code": 0,
+    "message": "成功",
+    "success": true,
+    "result": []
+  },
+  "contestSchedule_edition2": {
+    "code": 1001,
+    "message": "登录令牌丢失",
+    "success": false
+  }
+}

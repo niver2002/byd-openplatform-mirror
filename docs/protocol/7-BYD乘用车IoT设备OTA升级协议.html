@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BYD乘用车IoT设备OTA升级协议 · 比亚迪生态开放平台 · 资料镜像</title>
+<link rel="stylesheet" href="../../style.css">
+
+</head>
+<body>
+<header class="top"><div class="inner">
+  <a class="brand" href="../../index.html">比亚迪生态开放平台 · 资料镜像</a>
+  <nav><a href="../../">首页</a><a href="../../contest/">赛事</a><a href="../../api/">API 库</a><a href="../../dev/">开发者文档</a><a href="../../protocol/" class="on">协议规范</a><a href="../../downloads/">资料包</a><a href="../../search.html">搜索</a></nav>
+</div></header>
+<div class="wrap">
+<aside><div class="sec">文档目录</div>
+<div class="sec">开发者文档</div><ul>
+<li><a class="" href="../dev/236-知识地图.html">知识地图</a></li>
+<li><a class="" href="../dev/101-开发者注册认证.html">开发者注册认证</a></li>
+<li><a class="" href="../dev/280-直连接入套件.html"><span style="color:#8b95a3">开发套件 / AIoT套件 / </span>直连接入套件</a></li>
+<li><a class="" href="../dev/281-云云对接套件.html"><span style="color:#8b95a3">开发套件 / AIoT套件 / </span>云云对接套件</a></li>
+<li><a class="" href="../dev/282-云设备接入套件.html"><span style="color:#8b95a3">开发套件 / AIoT套件 / </span>云设备接入套件</a></li>
+<li><a class="" href="../dev/317-生态硬件接口.html"><span style="color:#8b95a3">开发套件 / AIoT套件 / </span>生态硬件接口</a></li>
+<li><a class="" href="../dev/241-应用分发套件.html"><span style="color:#8b95a3">开发套件 / </span>应用分发套件</a></li>
+<li><a class="" href="../dev/355-主题编辑器使用说明.html"><span style="color:#8b95a3">开发套件 / 主题套件 / </span>主题编辑器使用说明</a></li>
+<li><a class="" href="../dev/1-业务简介.html"><span style="color:#8b95a3">AIoT业务 / </span>业务简介</a></li>
+<li><a class="" href="../dev/2-接入指南.html"><span style="color:#8b95a3">AIoT业务 / </span>接入指南</a></li>
+<li><a class="" href="../dev/32-创建产品.html"><span style="color:#8b95a3">AIoT业务 / </span>创建产品</a></li>
+<li><a class="" href="../dev/64-功能定义.html"><span style="color:#8b95a3">AIoT业务 / </span>功能定义</a></li>
+<li><a class="" href="../dev/106-固件开发.html"><span style="color:#8b95a3">AIoT业务 / </span>固件开发</a></li>
+<li><a class="" href="../dev/31-产品自测.html"><span style="color:#8b95a3">AIoT业务 / </span>产品自测</a></li>
+<li><a class="" href="../dev/30-产品认证.html"><span style="color:#8b95a3">AIoT业务 / </span>产品认证</a></li>
+<li><a class="" href="../dev/39-高阶配置概述.html"><span style="color:#8b95a3">AIoT业务 / 高阶配置 / </span>高阶配置概述</a></li>
+<li><a class="" href="../dev/336-产品百科概述.html"><span style="color:#8b95a3">AIoT业务 / 高阶配置 / 产品百科 / </span>产品百科概述</a></li>
+<li><a class="" href="../dev/41-产品说明书设计规范.html"><span style="color:#8b95a3">AIoT业务 / 高阶配置 / 产品百科 / </span>产品说明书设计规范</a></li>
+<li><a class="" href="../dev/42-产品主图设计规范.html"><span style="color:#8b95a3">AIoT业务 / 高阶配置 / 产品百科 / </span>产品主图设计规范</a></li>
+<li><a class="" href="../dev/40-产品卖点填写规范.html"><span style="color:#8b95a3">AIoT业务 / 高阶配置 / 产品百科 / </span>产品卖点填写规范</a></li>
+<li><a class="" href="../dev/60-手动添加引导.html"><span style="color:#8b95a3">AIoT业务 / 高阶配置 / </span>手动添加引导</a></li>
+<li><a class="" href="../dev/12-儿童座椅.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 直连接入 / </span>儿童座椅</a></li>
+<li><a class="" href="../dev/13-智能眼罩.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 直连接入 / </span>智能眼罩</a></li>
+<li><a class="" href="../dev/14-游戏手柄.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 直连接入 / </span>游戏手柄</a></li>
+<li><a class="" href="../dev/15-麦克风.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 直连接入 / </span>麦克风</a></li>
+<li><a class="" href="../dev/17-全景运动相机.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 直连接入 / </span>全景运动相机</a></li>
+<li><a class="" href="../dev/237-颈部按摩仪.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 直连接入 / </span>颈部按摩仪</a></li>
+<li><a class="" href="../dev/238-宠物安全座.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 直连接入 / </span>宠物安全座</a></li>
+<li><a class="" href="../dev/289-九号滑板车.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 直连接入 / </span>九号滑板车</a></li>
+<li><a class="" href="../dev/290-车载空气净化器.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 直连接入 / </span>车载空气净化器</a></li>
+<li><a class="" href="../dev/292-车载吸尘器.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 直连接入 / </span>车载吸尘器</a></li>
+<li><a class="" href="../dev/291-腰部按摩仪.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 直连接入 / </span>腰部按摩仪</a></li>
+<li><a class="" href="../dev/293-两用双温冰箱.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 直连接入 / </span>两用双温冰箱</a></li>
+<li><a class="" href="../dev/286-车家互联（美的）.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 云云对接 / </span>车家互联（美的）</a></li>
+<li><a class="" href="../dev/16-智能手表.html"><span style="color:#8b95a3">AIoT业务 / 合作案例 / 云云对接 / </span>智能手表</a></li>
+<li><a class="" href="../dev/20-业务简介.html"><span style="color:#8b95a3">应用分发业务 / </span>业务简介</a></li>
+<li><a class="" href="../dev/21-接入指南.html"><span style="color:#8b95a3">应用分发业务 / </span>接入指南</a></li>
+<li><a class="" href="../dev/24-应用市场审核指南.html"><span style="color:#8b95a3">应用分发业务 / 应用分发审核管理规范 / </span>应用市场审核指南</a></li>
+<li><a class="" href="../dev/359-应用审核Checklist.html"><span style="color:#8b95a3">应用分发业务 / 应用分发审核管理规范 / </span>应用审核Checklist</a></li>
+<li><a class="" href="../dev/212-功能、兼容性、性能、稳定性测试标准.html"><span style="color:#8b95a3">应用分发业务 / 应用分发审核管理规范 / </span>功能、兼容性、性能、稳定性测试标准</a></li>
+<li><a class="" href="../dev/213-网络安全技术要求.html"><span style="color:#8b95a3">应用分发业务 / 应用分发审核管理规范 / </span>网络安全技术要求</a></li>
+<li><a class="" href="../dev/214-数据安全技术要求.html"><span style="color:#8b95a3">应用分发业务 / 应用分发审核管理规范 / </span>数据安全技术要求</a></li>
+<li><a class="" href="../dev/215-合规检查要求.html"><span style="color:#8b95a3">应用分发业务 / 应用分发审核管理规范 / </span>合规检查要求</a></li>
+<li><a class="" href="../dev/216-用户体验验收指标.html"><span style="color:#8b95a3">应用分发业务 / 应用分发审核管理规范 / </span>用户体验验收指标</a></li>
+<li><a class="" href="../dev/19-屏幕信息说明.html"><span style="color:#8b95a3">应用分发业务 / </span>屏幕信息说明</a></li>
+<li><a class="" href="../dev/29-特殊行业资质要求.html"><span style="color:#8b95a3">应用分发业务 / </span>特殊行业资质要求</a></li>
+<li><a class="" href="../dev/315-腾讯音乐合作.html"><span style="color:#8b95a3">应用分发业务 / 合作案例 / </span>腾讯音乐合作</a></li>
+<li><a class="" href="../dev/25-网易云音乐车机版.html"><span style="color:#8b95a3">应用分发业务 / 合作案例 / </span>网易云音乐车机版</a></li>
+<li><a class="" href="../dev/26-百度地图车机版.html"><span style="color:#8b95a3">应用分发业务 / 合作案例 / </span>百度地图车机版</a></li>
+<li><a class="" href="../dev/27-喜马拉雅车机版.html"><span style="color:#8b95a3">应用分发业务 / 合作案例 / </span>喜马拉雅车机版</a></li>
+<li><a class="" href="../dev/28-哔哩哔哩车机版.html"><span style="color:#8b95a3">应用分发业务 / 合作案例 / </span>哔哩哔哩车机版</a></li>
+<li><a class="" href="../dev/46-业务简介.html"><span style="color:#8b95a3">主题商店业务 / </span>业务简介</a></li>
+<li><a class="" href="../dev/47-接入指南.html"><span style="color:#8b95a3">主题商店业务 / </span>接入指南</a></li>
+<li><a class="" href="../dev/54-合作模式.html"><span style="color:#8b95a3">主题商店业务 / </span>合作模式</a></li>
+<li><a class="" href="../dev/300-主题设计规范.html"><span style="color:#8b95a3">主题商店业务 / 主题设计规范与指南 / </span>主题设计规范</a></li>
+<li><a class="" href="../dev/353-主题编辑器使用说明.html"><span style="color:#8b95a3">主题商店业务 / 主题设计规范与指南 / </span>主题编辑器使用说明</a></li>
+<li><a class="" href="../dev/301-设计模板下载及导出指南.html"><span style="color:#8b95a3">主题商店业务 / 主题设计规范与指南 / </span>设计模板下载及导出指南</a></li>
+<li><a class="" href="../dev/337-优秀作品示例.html"><span style="color:#8b95a3">主题商店业务 / 主题设计规范与指南 / </span>优秀作品示例</a></li>
+<li><a class="" href="../dev/50-主题评分与审核管理规范.html"><span style="color:#8b95a3">主题商店业务 / </span>主题评分与审核管理规范</a></li>
+<li><a class="" href="../dev/302-主题开发者管理规范.html"><span style="color:#8b95a3">主题商店业务 / </span>主题开发者管理规范</a></li>
+<li><a class="" href="../dev/49-YOMeeDoll企鹅.html"><span style="color:#8b95a3">主题商店业务 / 合作案例 / </span>YOMeeDoll企鹅</a></li>
+<li><a class="" href="../dev/51-HALUU.html"><span style="color:#8b95a3">主题商店业务 / 合作案例 / </span>HALUU</a></li>
+<li><a class="" href="../dev/52-网易严选香氛.html"><span style="color:#8b95a3">主题商店业务 / 合作案例 / </span>网易严选香氛</a></li>
+<li><a class="" href="../dev/57-参赛规则.html"><span style="color:#8b95a3">主题商店业务 / 比亚迪智能座舱设计大赛 / </span>参赛规则</a></li>
+<li><a class="" href="../dev/58-获奖通知说明.html"><span style="color:#8b95a3">主题商店业务 / 比亚迪智能座舱设计大赛 / </span>获奖通知说明</a></li>
+<li><a class="" href="../dev/59-大赛权益说明.html"><span style="color:#8b95a3">主题商店业务 / 比亚迪智能座舱设计大赛 / </span>大赛权益说明</a></li>
+<li><a class="" href="../dev/4-用户协议.html"><span style="color:#8b95a3">平台协议 / </span>用户协议</a></li>
+<li><a class="" href="../dev/5-隐私政策.html"><span style="color:#8b95a3">平台协议 / </span>隐私政策</a></li>
+<li><a class="" href="../dev/121-AIoT业务协议.html"><span style="color:#8b95a3">平台协议 / </span>AIoT业务协议</a></li>
+<li><a class="" href="../dev/147-应用分发业务协议.html"><span style="color:#8b95a3">平台协议 / </span>应用分发业务协议</a></li>
+<li><a class="" href="../dev/148-应用分发业务合规承诺.html"><span style="color:#8b95a3">平台协议 / </span>应用分发业务合规承诺</a></li>
+<li><a class="" href="../dev/306-主题商店业务协议.html"><span style="color:#8b95a3">平台协议 / </span>主题商店业务协议</a></li>
+<li><a class="" href="../dev/55-用户协议.html"><span style="color:#8b95a3">平台协议 / 比亚迪智能座舱设计大赛 / </span>用户协议</a></li>
+<li><a class="" href="../dev/56-隐私政策.html"><span style="color:#8b95a3">平台协议 / 比亚迪智能座舱设计大赛 / </span>隐私政策</a></li>
+<li><a class="" href="../dev/62-监护人知情同意书.html"><span style="color:#8b95a3">平台协议 / 比亚迪智能座舱设计大赛 / </span>监护人知情同意书</a></li>
+<li><a class="" href="../dev/61-儿童隐私保护声明.html"><span style="color:#8b95a3">平台协议 / 比亚迪智能座舱设计大赛 / </span>儿童隐私保护声明</a></li>
+<li><a class="" href="../dev/35-硬件产品销售渠道.html"><span style="color:#8b95a3">营销渠道 / </span>硬件产品销售渠道</a></li>
+<li><a class="" href="../dev/34-三方应用联运服务.html"><span style="color:#8b95a3">营销渠道 / </span>三方应用联运服务</a></li>
+<li><a class="" href="../dev/63-精品主题营销渠道.html"><span style="color:#8b95a3">营销渠道 / </span>精品主题营销渠道</a></li>
+<li><a class="" href="../dev/37-管理规则概览.html"><span style="color:#8b95a3">营销渠道 / 规则中心 / </span>管理规则概览</a></li>
+<li><a class="" href="../dev/225-第三方商家入驻与退出规则.html"><span style="color:#8b95a3">营销渠道 / 规则中心 / </span>第三方商家入驻与退出规则</a></li>
+<li><a class="" href="../dev/226-保证金管理规则.html"><span style="color:#8b95a3">营销渠道 / 规则中心 / </span>保证金管理规则</a></li>
+<li><a class="" href="../dev/227-禁止发布商品及信息明细.html"><span style="color:#8b95a3">营销渠道 / 规则中心 / </span>禁止发布商品及信息明细</a></li>
+<li><a class="" href="../dev/228-赠品管理规则.html"><span style="color:#8b95a3">营销渠道 / 规则中心 / </span>赠品管理规则</a></li>
+<li><a class="" href="../dev/229-第三方商家售后服务管理规则.html"><span style="color:#8b95a3">营销渠道 / 规则中心 / </span>第三方商家售后服务管理规则</a></li>
+<li><a class="" href="../dev/230-第三方商家发票管理规则.html"><span style="color:#8b95a3">营销渠道 / 规则中心 / </span>第三方商家发票管理规则</a></li>
+<li><a class="" href="../dev/231-交易纠纷仲裁规则.html"><span style="color:#8b95a3">营销渠道 / 规则中心 / </span>交易纠纷仲裁规则</a></li>
+<li><a class="" href="../dev/232-第三方商家管理总则.html"><span style="color:#8b95a3">营销渠道 / 规则中心 / </span>第三方商家管理总则</a></li>
+<li><a class="" href="../dev/233-第三方商家违规处理规则.html"><span style="color:#8b95a3">营销渠道 / 规则中心 / </span>第三方商家违规处理规则</a></li>
+<li><a class="" href="../dev/234-第三方商家申诉规则.html"><span style="color:#8b95a3">营销渠道 / 规则中心 / </span>第三方商家申诉规则</a></li>
+<li><a class="" href="../dev/235-知识产权侵权处理规则.html"><span style="color:#8b95a3">营销渠道 / 规则中心 / </span>知识产权侵权处理规则</a></li>
+<li><a class="" href="../dev/53-活动与动态列表.html"><span style="color:#8b95a3">活动与动态 / </span>活动与动态列表</a></li>
+<li><a class="" href="../dev/341-荣耀车联，无缝流转.html"><span style="color:#8b95a3">活动与动态 / </span>荣耀车联，无缝流转</a></li>
+<li><a class="" href="../dev/340-比亚迪亮相WAIC2026.html"><span style="color:#8b95a3">活动与动态 / </span>比亚迪亮相WAIC2026</a></li>
+<li><a class="" href="../dev/339-与肯德基“9分钟人车补能”战略合作.html"><span style="color:#8b95a3">活动与动态 / </span>与肯德基“9分钟人车补能”战略合作</a></li>
+<li><a class="" href="../dev/262-比亚迪亮相AWE2026.html"><span style="color:#8b95a3">活动与动态 / </span>比亚迪亮相AWE2026</a></li>
+<li><a class="" href="../dev/342-2025智能座舱UI设计大赛圆满收官.html"><span style="color:#8b95a3">活动与动态 / </span>2025智能座舱UI设计大赛圆满收官</a></li>
+<li><a class="" href="../dev/338-与美的“人-车-家”战略合作.html"><span style="color:#8b95a3">活动与动态 / </span>与美的“人-车-家”战略合作</a></li>
+<li><a class="" href="../dev/3-联系我们.html">联系我们</a></li>
+</ul>
+<div class="sec" style="color:#0b6bcb;font-weight:700">协议规范</div><ul>
+<li><a class="" href="../protocol/109-文档介绍.html"><span style="color:#8b95a3">软件开发协议 / 直连接入协议 / 比亚迪智能设备开放接入协议 / </span>文档介绍</a></li>
+<li><a class="" href="../protocol/110-总体设计.html"><span style="color:#8b95a3">软件开发协议 / 直连接入协议 / 比亚迪智能设备开放接入协议 / </span>总体设计</a></li>
+<li><a class="" href="../protocol/111-BLE-传输层规范.html"><span style="color:#8b95a3">软件开发协议 / 直连接入协议 / 比亚迪智能设备开放接入协议 / </span>BLE 传输层规范</a></li>
+<li><a class="" href="../protocol/112-物模型-Profile-规范.html"><span style="color:#8b95a3">软件开发协议 / 直连接入协议 / 比亚迪智能设备开放接入协议 / </span>物模型 Profile 规范</a></li>
+<li><a class="" href="../protocol/113-消息交互规范.html"><span style="color:#8b95a3">软件开发协议 / 直连接入协议 / 比亚迪智能设备开放接入协议 / </span>消息交互规范</a></li>
+<li><a class="" href="../protocol/114-编码与数据格式.html"><span style="color:#8b95a3">软件开发协议 / 直连接入协议 / 比亚迪智能设备开放接入协议 / </span>编码与数据格式</a></li>
+<li><a class="" href="../protocol/115-分片机制.html"><span style="color:#8b95a3">软件开发协议 / 直连接入协议 / 比亚迪智能设备开放接入协议 / </span>分片机制</a></li>
+<li><a class="" href="../protocol/319-安全服务概述.html"><span style="color:#8b95a3">软件开发协议 / 直连接入协议 / 比亚迪智能设备开放接入协议 / </span>安全服务概述</a></li>
+<li><a class="" href="../protocol/320-文件传输概述.html"><span style="color:#8b95a3">软件开发协议 / 直连接入协议 / 比亚迪智能设备开放接入协议 / </span>文件传输概述</a></li>
+<li><a class="" href="../protocol/321-OTA-升级概述.html"><span style="color:#8b95a3">软件开发协议 / 直连接入协议 / 比亚迪智能设备开放接入协议 / </span>OTA 升级概述</a></li>
+<li><a class="" href="../protocol/322-错误码、常见问题与注意事项.html"><span style="color:#8b95a3">软件开发协议 / 直连接入协议 / 比亚迪智能设备开放接入协议 / </span>错误码、常见问题与注意事项</a></li>
+<li><a class="on" href="../protocol/7-BYD乘用车IoT设备OTA升级协议.html"><span style="color:#8b95a3">软件开发协议 / 直连接入协议 / </span>BYD乘用车IoT设备OTA升级协议</a></li>
+<li><a class="" href="../protocol/278-比亚迪智能设备云云对接协议.html"><span style="color:#8b95a3">软件开发协议 / 云接入协议 / </span>比亚迪智能设备云云对接协议</a></li>
+<li><a class="" href="../protocol/279-比亚迪智能云设备接入协议.html"><span style="color:#8b95a3">软件开发协议 / 云接入协议 / </span>比亚迪智能云设备接入协议</a></li>
+<li><a class="" href="../protocol/311-概述.html"><span style="color:#8b95a3">硬件接口规范 / 生态硬件接口 / </span>概述</a></li>
+<li><a class="" href="../protocol/312-外接件一般约束.html"><span style="color:#8b95a3">硬件接口规范 / 生态硬件接口 / </span>外接件一般约束</a></li>
+<li><a class="" href="../protocol/313-螺纹生态接口（供电）.html"><span style="color:#8b95a3">硬件接口规范 / 生态硬件接口 / </span>螺纹生态接口（供电）</a></li>
+<li><a class="" href="../protocol/314-椅背生态接口.html"><span style="color:#8b95a3">硬件接口规范 / 生态硬件接口 / </span>椅背生态接口</a></li>
+<li><a class="" href="../protocol/318-中控生态接口.html"><span style="color:#8b95a3">硬件接口规范 / 生态硬件接口 / </span>中控生态接口</a></li>
+</ul>
+<div class="sec">API 库</div><ul>
+<li><a class="" href="../api/138-概述.html"><span style="color:#8b95a3">API库 / </span>概述</a></li>
+<li><a class="" href="../api/139-接口说明.html"><span style="color:#8b95a3">API库 / </span>接口说明</a></li>
+<li><a class="" href="../api/140-键值说明.html"><span style="color:#8b95a3">API库 / </span>键值说明</a></li>
+<li><a class="" href="../api/142-其他说明.html"><span style="color:#8b95a3">API库 / </span>其他说明</a></li>
+<li><a class="" href="../api/135-车身状态类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>车身状态类</a></li>
+<li><a class="" href="../api/178-行驶数据类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>行驶数据类</a></li>
+<li><a class="" href="../api/179-车速类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>车速类</a></li>
+<li><a class="" href="../api/180-能量、模式类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>能量、模式类</a></li>
+<li><a class="" href="../api/181-全景、-摄像头类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>全景、 摄像头类</a></li>
+<li><a class="" href="../api/183-空调类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>空调类</a></li>
+<li><a class="" href="../api/185-空气质量类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>空气质量类</a></li>
+<li><a class="" href="../api/186-发动机类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>发动机类</a></li>
+<li><a class="" href="../api/187-变速箱、制动类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>变速箱、制动类</a></li>
+<li><a class="" href="../api/188-门锁类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>门锁类</a></li>
+<li><a class="" href="../api/189-车灯类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>车灯类</a></li>
+<li><a class="" href="../api/190-安全带类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>安全带类</a></li>
+<li><a class="" href="../api/191-雷达类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>雷达类</a></li>
+<li><a class="" href="../api/192-充电类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>充电类</a></li>
+<li><a class="" href="../api/193-轮胎类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>轮胎类</a></li>
+<li><a class="" href="../api/194-仪表类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>仪表类</a></li>
+<li><a class="" href="../api/195-时间类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>时间类</a></li>
+<li><a class="" href="../api/196-传感器类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>传感器类</a></li>
+<li><a class="" href="../api/197-媒体中心类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>媒体中心类</a></li>
+<li><a class="" href="../api/198-车辆设置类.html"><span style="color:#8b95a3">API库 / API接口定义 / </span>车辆设置类</a></li>
+<li><a class="" href="../api/182-JAR包下载.html"><span style="color:#8b95a3">API库 / </span>JAR包下载</a></li>
+<li><a class="" href="../api/352-车机开放接口安全声明.html"><span style="color:#8b95a3">API库 / </span>车机开放接口安全声明</a></li>
+</ul>
+</aside>
+<main>
+<div class="crumb"><a href="index.html">协议规范</a> / <a href="index.html">软件开发协议</a> / <a href="index.html">直连接入协议</a></div><h1>BYD乘用车IoT设备OTA升级协议</h1><div class="meta">来源：软件开发协议 / 直连接入协议 / BYD乘用车IoT设备OTA升级协议 · 文档 ID 7 · <a href="https://openplatform.byd.com/#/document/index?id=7" target="_blank" rel="noopener">原始页面</a></div><article><h2><span><strong>1. 通信协议栈</strong></span></h2><p><img src="../assets/79295db38cd14db59d6bd999a0d646ed-32af3f.png" alt="OTA协议栈.png"></p><p><span>图 1-1 通信协议栈</span></p><h2><span><strong>2. 帧数据结构</strong></span></h2><p><img src="../assets/6617c5945a2b48fda474bb824fabe4fe-3acd72.png" alt="OTA数据帧.png"></p><p><span>图 2-1 帧数据结构</span></p><p><span>各字段的要求和描述如下表</span><span>所示：</span></p><table><colgroup><col width="125"><col width="124"><col width="646"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>字段名</span></th><th colspan="1" rowspan="1" width="auto"><span>类型</span></th><th colspan="1" rowspan="1" width="auto"><span>描述和要求</span></th></tr><tr><td colspan="1" rowspan="1" width="auto"><span>起始标识</span></td><td colspan="1" rowspan="1" width="auto"><span>WORD</span></td><td colspan="1" rowspan="1" width="auto"><span>起始标识，固定为0xFEFE。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>BYTE</span></td><td colspan="1" rowspan="1" width="auto"><span>高四位预留；低四位表示协议版本号，当前为1。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>消息码</span></td><td colspan="1" rowspan="1" width="auto"><span>BYTE</span></td><td colspan="1" rowspan="1" width="auto"><span>消息码的定义为：l 0x00-0x10：预留消息码，暂未使用。l 0x11：开始传包。l 0x12：发送数据。l 0x13：上报升级结果。l 0x14-0x7F：预留消息码，暂未使用。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>校验码</span></td><td colspan="1" rowspan="1" width="auto"><span>WORD</span></td><td colspan="1" rowspan="1" width="auto"><span>从起始标识到数据区的最后一个字节的CRC16校验值，计算前先把校验码字段置为0，计算完成后把结果写到校验码字段。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>数据区长度</span></td><td colspan="1" rowspan="1" width="auto"><span>WORD</span></td><td colspan="1" rowspan="1" width="auto"><span>数据区的长度。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>数据区</span></td><td colspan="1" rowspan="1" width="auto"><span>BYTE[n]</span></td><td colspan="1" rowspan="1" width="auto"><span>可变长度，具体由各个指令定义，可参考下面介绍的各个指令对应的请求消息和应答消息定义。</span></td></tr></tbody></table><p><span>表 2-1 帧数据结构定义</span></p><h2><span><strong>3. 消息指令</strong></span></h2><h3><span><strong>3.1. 开始传包</strong></span></h3><p><span>请求描述：</span></p><table><colgroup><col width="130"><col width="768"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>数据方向</span></th><th colspan="1" rowspan="1" width="auto"><span>IOTA主控-&gt;IOT主从网关-&gt;IOT设备</span></th></tr><tr><td colspan="1" rowspan="1" width="auto"><span>起始标识</span></td><td colspan="1" rowspan="1" width="auto"><span>0xFEFE</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>0x01</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>消息码</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>校验码</span></td><td colspan="1" rowspan="1" width="auto"><span>CRC16计算</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>数据区长度</span></td><td colspan="1" rowspan="1" width="auto"><span>0x0016</span></td></tr><tr><td colspan="1" rowspan="4" width="auto"><span>数据区</span></td><td colspan="1" rowspan="1" width="auto"><span>目的版本号（16个字节）：由ASCII字符组成，位数不足时后补0</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>数据帧最大长度（2个字节）：固件包拆包后每帧数据最大长度。备注：l IOTA主控根据IOT设备定义（参考硬件及升级包大小）的MUT进行自适应动态填充；l 数据帧最大长度应小于IOT设备的MTU和主从网关的MTU（当前为512个字节）。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>总帧数（2个字节）：固件包拆包后的数据帧总数</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>检验码（2个字节）：用户上传升级包时，需在固件包描述文件里填写校验码</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td></tr></tbody></table><p><span>表 3-1 开始传包的请求消息</span><span> </span></p><p><span>返回描述：</span></p><table><colgroup><col width="129"><col width="764"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>数据方向</span></th><th colspan="1" rowspan="1" width="auto"><span>IOT设备-&gt;IOT主从网关-&gt;IOTA主控</span></th></tr><tr><td colspan="1" rowspan="1" width="auto"><span>起始标识</span></td><td colspan="1" rowspan="1" width="auto"><span>0xFEFE</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>0x01</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>消息码</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>校验码</span></td><td colspan="1" rowspan="1" width="auto"><span>CRC16计算</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>数据区长度</span></td><td colspan="1" rowspan="1" width="auto"><span>0x0001</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>数据区</span></td><td colspan="1" rowspan="1" width="auto"><span>结果码（1个字节）：参考4.3章节定义</span></td></tr></tbody></table><p><span>表 3-2 开始传包的返回消息</span><span> </span></p><h3><span>3.2.</span><span><strong> </strong></span><span><strong>发送数据</strong></span></h3><p><span>请求描述：</span></p><table><colgroup><col width="125.93"><col width="769"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>数据方向</span></th><th colspan="1" rowspan="1" width="auto"><span>IOTA主控-&gt;IOT主从网关-&gt;IOT设备</span></th></tr><tr><td colspan="1" rowspan="1" width="auto"><span>起始标识</span></td><td colspan="1" rowspan="1" width="auto"><span>0xFEFE</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>0x01</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>消息码</span></td><td colspan="1" rowspan="1" width="auto"><span>0x12</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>校验码</span></td><td colspan="1" rowspan="1" width="auto"><span>CRC16计算</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>数据区长度</span></td><td colspan="1" rowspan="1" width="auto"><span>0x0006+N</span></td></tr><tr><td colspan="1" rowspan="3" width="auto"><span>数据区</span></td><td colspan="1" rowspan="1" width="auto"><span>帧序号（2个字节）：表示请求获取的分片序号，从0开始计算，帧总数为固件包大小除以每帧数据大小并向上取整获得。设备可以保存已经收到的数据帧，下次直接从缺失的数据帧开始请求，达到断点续传的效果。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>帧地址（4个字节）：预留字段，默认情况填0。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>帧数据（N个字节）：数据帧内容，N为实际的数据帧大小。如果结果码不为0，则不带此字段。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td></tr></tbody></table><p><span>表 3-3 发送数据的请求消息</span><span> </span></p><p><span>返回描述：</span></p><table><colgroup><col width="128"><col width="763"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>数据方向</span></th><th colspan="1" rowspan="1" width="auto"><span>IOT设备-&gt;IOT主从网关-&gt;IOTA主控</span></th></tr><tr><td colspan="1" rowspan="1" width="auto"><span>起始标识</span></td><td colspan="1" rowspan="1" width="auto"><span>0xFEFE</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>0x01</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>消息码</span></td><td colspan="1" rowspan="1" width="auto"><span>0x12</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>校验码</span></td><td colspan="1" rowspan="1" width="auto"><span>CRC16计算</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>数据区长度</span></td><td colspan="1" rowspan="1" width="auto"><span>0x0003</span></td></tr><tr><td colspan="1" rowspan="2" width="auto"><span>数据区</span></td><td colspan="1" rowspan="1" width="auto"><span>结果码（1个字节）：参考4.3章节定义</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>帧序号（2个字节）：返回的数据帧序号</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td></tr></tbody></table><p><span>表 3-4 发送数据的返回消息</span><span> </span></p><h3><span>3.3. </span><span><strong>上报升级结果</strong></span></h3><p><span>请求描述：</span></p><table><colgroup><col width="133"><col width="759"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>数据方向</span></th><th colspan="1" rowspan="1" width="auto"><span>IOTA主控-&gt;IOT主从网关-&gt;IOT设备</span></th></tr><tr><td colspan="1" rowspan="1" width="auto"><span>起始标识</span></td><td colspan="1" rowspan="1" width="auto"><span>0xFEFE</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>0x01</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>消息码</span></td><td colspan="1" rowspan="1" width="auto"><span>0x13</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>校验码</span></td><td colspan="1" rowspan="1" width="auto"><span>CRC16计算</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>数据区长度</span></td><td colspan="1" rowspan="1" width="auto"><span>0x0001</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>数据区</span></td><td colspan="1" rowspan="1" width="auto"><span>暂无</span></td></tr></tbody></table><p><span>表 3-5 上报升级结果的请求消息</span><span> </span></p><p><span>返回描述：</span></p><table><colgroup><col width="134"><col width="758"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>数据方向</span></th><th colspan="1" rowspan="1" width="auto"><span>IOT设备-&gt;IOT主从网关-&gt;IOTA主控</span></th></tr><tr><td colspan="1" rowspan="1" width="auto"><span>起始标识</span></td><td colspan="1" rowspan="1" width="auto"><span>0xFEFE</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>0x01</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>消息码</span></td><td colspan="1" rowspan="1" width="auto"><span>0x13</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>校验码</span></td><td colspan="1" rowspan="1" width="auto"><span>CRC16计算</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>数据区长度</span></td><td colspan="1" rowspan="1" width="auto"><span>0x0011</span></td></tr><tr><td colspan="1" rowspan="2" width="auto"><span>数据区</span></td><td colspan="1" rowspan="1" width="auto"><span>结果码（1个字节）：参考4.3章节定义</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>当前版本号（16个字节）：由ASCII字符组成，位数不足时后补0</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td></tr></tbody></table><p><span>表 3-6 上报升级结果的返回消息</span><span> </span></p><h2><span>4. </span><span><strong>升级流程</strong></span></h2><h3><span>4.1.</span><span><strong> </strong></span><span><strong>正常流程</strong></span></h3><p><img src="../assets/742eee704db54616844174c6037f8b5d-12aa9c.png" alt="OTA4_1.png"><span> </span></p><p><span>图 4-1 正常升级流程</span><span> </span><span> </span></p><h3><span>4.2. </span><span><strong>异常流程</strong></span></h3><p><img src="../assets/e035f4c6990644e4ba323aba3ab1dbd3-412efd.png" alt="OTA4-2.png"></p><p><span>图 4-2 异常升级流程</span><span> </span></p><h2><span><strong>5. 附录</strong></span></h2><h3><span>5.1. </span><span><strong>基本要求</strong></span></h3><h4><span><strong>5.1.1 IoT设备</strong></span></h4><p><span>OTA升级包括三部分：</span><span><strong>BOOT引导区</strong></span><span><strong>、</strong></span><span><strong>代码运行区</strong></span><span>和</span><span><strong>代码升级区</strong></span><span>。</span></p><p><img src="../assets/d4673077a3e04ffbbddbcfe96a4acfe1-f37ca4.png" alt="image.png"><span>  </span></p><p><span>图 5-1</span><span> </span><span>A/B分区实现示意图</span></p><p><span>1) 满足安装刷写流程中的刷写校验能力：</span></p><ul><li><span>IoT设备供应商需打包升级文件，然后上传到IOTA服务器；</span></li><li><span>IOTA主控从IOTA服务器检测到有满足升级策略的目标版本软件后，把升级包下载到PAD设备本地存储空间；</span></li><li><span>IOTA主控解压升级包后，进行文件校验；</span></li><li><span>文件校验通过后，IOTA主控进行接下来的刷写流程。</span></li></ul><p><span>2) 满足激活分区流程中的如下其中之一的能力：</span></p><ul><li><span>AB分区激活：由原代码运行区跳转到目标版本主程序文件所在代码升级区（即新代码运行区）；</span></li><li><span>备份分区激活：将代码升级区中的目标版本主程序文件拷贝到代码运行区。</span></li></ul><p><span>3) 满足安装刷写流程中的断电续升能力： </span></p><ul><li><span>A/B 分区 IOT 设备：应具备中途断电重启后重新升级刷写的功能； </span></li><li><span>备份分区 IOT 设备：不作断电续升能力要求，但安装刷写过程须提示用户务必不能掉电。 </span></li></ul><p><span>4) 满足升级完成后的不影响设备用户数据能力： </span></p><ul><li><span>正常情况下，安装刷写过程不应影响（修改或删除）I</span><span>o</span><span>T 设备相关业务用户数据，以保证升级完成重启后用户可以根据升级前方式来使用设备。</span></li></ul><p><span>5) 功能定义：</span></p><ul><li><span>A/B分区IoT设备的激活方式：</span></li></ul><p><span>每次IoT设备的主控接收到升级指令时，进入BOOT引导区由Bootloader程序接收APP升级文件。Bootloader程序轮询A和B分区进行判断，以进行接下来的升级操作：</span></p><p><span>比如，当前APP代码运行在A分区（代码运行区），当接收到升级指令后由Bootloader程序（BOOT引导区）将目标APP版本代码刷写到B区（代码升级区）。刷写目标APP代码完毕且校验刷写如果OK，则复位跳转到B区运行。反之则再刷写到A区，复位跳转到A区运行。</span></p><p><span>注意：这里会出现不同供应商实现方式不一样导致单文件和双文件两种目标APP版本升级文件打包（参考如下主程序文件定义）进行A/B分区IoT设备刷写和激活的方式，我们需对两种方式都支持。</span></p><ul><li><span>备份分区IoT设备的激活方式：</span></li></ul><p><span>每次IoT设备的主控接收到升级指令时，进入BOOT引导区由Bootloader程序接收APP升级文件。Bootloader程序（BOOT引导区）将目标APP版本代码刷写到B分区（代码升级区）。刷写目标APP代码完毕且校验刷写如果OK，将目标APP版本代码拷贝到A分区（代码运行区）。拷贝完毕则复位，BOOT引导区跳转到代码运行区运行APP代码。</span></p><p><img src="../assets/e3decacabf7049458187c8581d293330-15e141.png" alt="OTA.png"></p><p><span> </span><span>图 5-2</span><span> </span><span>备份分区IoT设备的激活方式</span></p><p><span>6）分区切换逻辑</span></p><p><span>IoT设备启动时，为了判断应该切换到哪个分区定义active, bootable, successful三个状态标识。</span></p><p><span>各状态说明如下： </span></p><p><span>（1) active：活动分区标识，代表该分区为启动分区，bootloader 总会选择 active 状态的分区进行启动。其具有排它性，有且只有一个分区 active = 1。 </span></p><p><span>（2) bootable：表示该分区存在一套可能可以启动的系统。 </span></p><p><span>（3) successful：表示该分区能正常启动。 </span></p><p><span>分区A和分区B，有且仅有一个是active，它们可以同时有bootable和successful属性。</span></p><p><img src="../assets/2f264845b2914049914446de257e755a-396141.png" alt="OTA分区切换逻辑.png"></p><p><span>图 5-3</span><span> </span><span>分区切换逻辑</span></p><p><span>IoT设备在上电或复位后，分区的切换逻辑如下： </span></p><p><span>（1）检测到1或2个分区的bootable状态标识值为1。 </span></p><p><span>（2）选择active值为1的分区启动。如果没有active的分区选择successful值为1的分区进行尝试启动。 </span></p><p><span>（3）启动成功代表该分区能正常运行。 </span></p><p><span>（4）如果启动成功，则设置该分区状态标识successful=1和active=1。 </span></p><p><span>（5）如果启动失败，则设置该分区为bootable=0，successful=0和 active=0，并设置另一个为active=1，进行下一次尝试。</span></p><p><span>下图描述了真实的更新场景下A/B分区在升级过程中的状态标识位变化：</span></p><p><img src="../assets/64a7150127dc4f72bfb77bada55d7ae9-87b698.png" alt="OTA分区切换逻辑2.png"></p><p><span>图 5-4</span><span> </span><span>A/B分区在升级过程中的状态标识位变化</span></p><p><span>（1） 正常状态下，当前正在运行的分区为A分区，其状态为active=1，bootable=1，successful=1，B分区未运行，假设其初始状态是active=0，bootable=1，successful=1。 </span></p><p><span>（2）数据下载过程中，B分区程序开始执行擦除后，设置其状态标识 active=0，bootable=0，successful=0。数据下载过程中A分区的状态保持不变。 </span></p><p><span>（3）数据下载完成,在“软硬件一致性检查”成功后，设置B分区的状态bootable=1，A分区的状态保持不变。IoT设备等待切换分区请求。 </span></p><p><span>（4） 当IoT设备收到“切换分区标定”请求后，设置A分区的状态active=0，B分区的状态active=1。 </span></p><p><span>（5）当复位/上电后，检测到成功进入B分区，设置B分区的状态successful=1。</span></p><h4><span><strong>5.1.2 主程序文件</strong></span></h4><ul><li><span>单文件（A/B分区与备份分区）IoT设备</span></li></ul><p><span>更新文件，文件命名规则为：</span><span><strong>主版本号.子版本号.阶段版本号.日期.bin</strong></span></p><table><colgroup><col width="136"><col width="756"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>字段名称</span></th><th colspan="1" rowspan="1" width="auto"><span>字段说明</span></th></tr><tr><td colspan="1" rowspan="1" width="auto"><span>主版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>取值范围：0~9，当功能模块有较大的变动，比如增加多个模块或者整体架构发生变化。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>子版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>取值范围：0~99，功能有一定新增或变化，比如增加了某些权限控制等。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>阶段版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>取值范围：0~99，一般是Bug修复或是小的变动，要经常发布修订版，时间间隔不限。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>日期</span></td><td colspan="1" rowspan="1" width="auto"><span>取值：yyyymmdd，示例：20241211。</span></td></tr></tbody></table><p> <span>表 5-1 单文件命名规则</span></p><ul><li><span>双文件（A/B分区）IoT设备</span></li></ul><p><span>1）A分区更新文件，文件命名规则为</span><span>：</span><span><strong>主版本号.子版本号.阶段版本号.日期_A.bin</strong></span></p><p><span>2）B分区更新文件，文件命名规则为：</span><span><strong>主版本号.子版本号.阶段版本号.日期_B.bin</strong></span></p><table><colgroup><col width="135"><col width="755"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>字段名称</span></th><th colspan="1" rowspan="1" width="auto"><span>字段说明</span></th></tr><tr><td colspan="1" rowspan="1" width="auto"><span>主版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>取值范围：0~9，当功能模块有较大的变动，比如增加多个模块或者整体架构发生变化。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>子版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>取值范围：0~99，功能有一定新增或变化，比如增加了某些权限控制等。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>阶段版本号</span></td><td colspan="1" rowspan="1" width="auto"><span>取值范围：0~99，一般是Bug修复或是小的变动，要经常发布修订版，时间间隔不限。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>日期</span></td><td colspan="1" rowspan="1" width="auto"><span>取值：yyyymmdd，示例：20241211。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>A</span></td><td colspan="1" rowspan="1" width="auto"><span>该烧写文件对应分区A（默认代码运行区）。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>B</span></td><td colspan="1" rowspan="1" width="auto"><span>该烧写文件对应分区B。</span></td></tr></tbody></table><p><span>表 5-2 双文件命名规则</span></p><ul><li><span>BIN升级文件规范</span></li></ul><p><span>1） 单升级模组IoT设备（非SOC类模组）：</span></p><p><span>这种IoT设备内部只有一个模组需要升级更新，需采用标准的BIN文件格式。</span></p><p><span>2） 多升级模组IoT设备（不带SOC类模组）：</span></p><p><span>这种IoT设备内部有多个模组需要升级更新，需采用自定义的BIN文件格式，如下：</span></p><table><colgroup><col width="168"><col width="173"><col width="266"><col width="288"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>地址</span></th><th colspan="2" rowspan="1" width="auto"><span>定义</span></th><th colspan="1" rowspan="1" width="auto"><span>备注</span></th></tr><tr><td colspan="1" rowspan="8" width="auto"><span>0~0x3FF</span></td><td colspan="1" rowspan="5" width="auto"><span>文件信息（128字节）</span></td><td colspan="1" rowspan="1" width="auto"><span>文件起始标识符(16字节)：固定字符</span></td><td colspan="1" rowspan="1" width="auto"><span>"BYD_IOT_DEV"</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>设备ID(6字节)</span></td><td colspan="1" rowspan="1" width="auto"><span>设备ID（ModelID）：由IOT产品分配</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>版本号(32字节)：主版本号.子版本号.阶段版本号.日期+预留（16字节）</span></td><td colspan="1" rowspan="1" width="auto"><span>打包工具INI文件配置，预留部分用0填充</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>总长度（6字节）</span></td><td colspan="1" rowspan="1" width="auto"><span>/</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>预留（64字节）</span></td><td colspan="1" rowspan="1" width="auto"><span>预留部分用0填充</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>模组A信息（128字节）</span></td><td colspan="1" rowspan="1" width="auto"><span>模组ID(6字节)+起始地址(4字节)+size(4字节)+预留（104字节）</span></td><td colspan="1" rowspan="2" width="auto"><span>模组ID（ModuleID）：当前由IOT设备端自行定义</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>模组B信息（128字节）</span></td><td colspan="1" rowspan="1" width="auto"><span>模组ID(6字节)+起始地址(4字节)+size(4字节)+预留（104字节）</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>预留（128*4字节）</span></td><td colspan="1" rowspan="1" width="auto"><span>全部用0填充</span></td><td colspan="1" rowspan="1" width="auto"><span>一个设备文件最多支持容纳6个升级模组，</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>模组A起始地址+size</span></td><td colspan="2" rowspan="1" width="auto"><span>模组A文件数据</span></td><td colspan="1" rowspan="1" width="auto"><span>/</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>模组B起始地址+size</span></td><td colspan="2" rowspan="1" width="auto"><span>模组B文件数据</span></td><td colspan="1" rowspan="1" width="auto"><span>/</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td></tr></tbody></table><p><span>表 5-3 多升级模组IOT设备的BIN文件格式</span></p><p><span>具体示例（H设备）：</span></p><table><colgroup><col width="240"><col width="219"><col width="433"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>地址</span></th><th colspan="2" rowspan="1" width="auto"><span>定义</span></th></tr><tr><td colspan="1" rowspan="10" width="auto"><span>0~0x3FF</span></td><td colspan="1" rowspan="5" width="auto"><span>文件信息</span></td><td colspan="1" rowspan="1" width="auto"><span>"BYD_IOT_DEV"</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x0000BC</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>X.XX.XX.XXXXXXXX</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>XXXXXX</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>预留</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>H设备蓝牙信息</span></td><td colspan="1" rowspan="1" width="auto"><span>"BC0001" + XXXX + XXXX + 预留</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>H设备MCU信息</span></td><td colspan="1" rowspan="1" width="auto"><span>"BC0002" + XXXX + XXXX + 预留</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>遥控器APP信息</span></td><td colspan="1" rowspan="1" width="auto"><span>"BC0003" + XXXX + XXXX + 预留</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>遥控器NBU信息</span></td><td colspan="1" rowspan="1" width="auto"><span>"BC0004" + XXXX + XXXX + 预留</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>预留</span></td><td colspan="1" rowspan="1" width="auto"><span>全部用0填充</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>H设备蓝牙起始地址 + size</span></td><td colspan="2" rowspan="1" width="auto"><span>H设备蓝牙文件数据</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>H设备MCU起始地址 + size</span></td><td colspan="2" rowspan="1" width="auto"><span>H设备MCU文件数据</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>遥控器APP起始地址 + size</span></td><td colspan="2" rowspan="1" width="auto"><span>遥控器APP文件数据</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>遥控器NBU起始地址 + size</span></td><td colspan="2" rowspan="1" width="auto"><span>遥控器NBU文件数据</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td></tr></tbody></table><p><span>表 5-4 多升级模组IoT设备的BIN文件格式举例</span></p><h4><span><strong>5.1.3 配置文件</strong></span></h4><p><span>1) 文件命名规则为：Config.xml;</span></p><p><span>2) 文件包含内容：</span></p><table><colgroup><col width="120"><col width="252"><col width="70"><col width="196"><col width="253"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>配置信息名称</span></th><th colspan="1" rowspan="1" width="auto"><span>应用属性</span></th><th colspan="1" rowspan="1" width="auto"><span>值域</span></th><th colspan="1" rowspan="1" width="auto"><span>配置说明</span></th><th colspan="1" rowspan="1" width="auto"><span>备注</span></th></tr><tr><td colspan="1" rowspan="1" width="auto"><span>ModelID</span></td><td colspan="1" rowspan="1" width="auto"><span>Used=“true”</span></td><td colspan="1" rowspan="1" width="auto"><span>String</span></td><td colspan="1" rowspan="1" width="auto"><span>设备模型值（举例：充气床垫，0x000002）</span></td><td colspan="1" rowspan="1" width="auto"><span>具体定义：https://upiwgvvcb4.feishu.cn/sheets/A30ssw4KghtvbbtxvZtcc7bwnfb</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>MD5</span></td><td colspan="1" rowspan="1" width="auto"><span>Used=“true” FileName=“…”</span></td><td colspan="1" rowspan="1" width="auto"><span>String</span></td><td colspan="1" rowspan="1" width="auto"><span>待更新文件MD5摘要值，与文件名称一一对应</span></td><td colspan="1" rowspan="1" width="auto"><span>RFC1321-MD5 值为hex字符</span></td></tr><tr><td colspan="5" rowspan="1" width="auto"><span>举例1：满足A/B分区激活方式的配置文件</span><span><code>&lt;Configure&gt;&lt;ModelID Used="true"&gt;0x000002&lt;/ModelID&gt;<br>&lt;MD5 Used="true" FileName =“1.0.8.20241106_A.bin”&gt; 0102030405060708090A0B0C0D0E0F00&lt;/MD5&gt;<br>&lt;MD5 Used="true" FileName =“1.0.8.20241106_B.bin”&gt; 0102030405060708090A0B0C0D0E0F00&lt;/MD5&gt;<br>&lt;/Configure&gt; <br><br></code></span><span>举例2：满足备份分区激活方式的配置文件</span><span><code>&lt;Configure&gt;&lt;ModelID Used="true"&gt;0x000002&lt;/ModelID&gt;<br>&lt;MD5 Used="true" FileName =“1.0.8.20241106_A.bin”&gt; 0102030405060708090A0B0C0D0E0F00&lt;/MD5&gt;<br>&lt;/Configure&gt;</code></span></td></tr><tr><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td><td colspan="1" rowspan="1" width="auto"></td></tr></tbody></table><p><span>表 5-5 配置文件定义</span></p><h4><span><strong>5.1.4 打包文件</strong></span></h4><p><span>1) 文件命名规则为：</span><span><strong>主版本号.子版本号.阶段版本号.日期.zip</strong></span><span>；</span></p><p><span>2) 文件包含内容：</span></p><p><span>双文件（A/B分区）IoT设备的激活方式：</span></p><ul><li><span>主版本号.子版本号.阶段版本号.日期_A.bin</span></li><li><span>主版本号.子版本号.阶段版本号.日期_B.bin</span></li><li><span>Config.xml</span></li></ul><p><span>示例：</span></p><p><img src="../assets/bbebaf5f78694452991bc1574f8ae7b0-35cec5.png" alt="image.png"></p><p><span>图 5-5</span><span> </span><span>A/B分区打包文件</span></p><p><span>单文件（A/B分区与备份分区）IoT设备的激活方式：</span></p><ul><li><span>主版本号.子版本号.阶段版本号.日期.bin</span></li><li><span>Config.xml</span></li></ul><p><span>示例：略。</span></p><h3><span><strong>5.2. CRC16算法</strong></span></h3><p><span>基于JAVA的CRC16算法样例：</span></p><pre><code>public class CRC16 {
+   /*
+    * CCITT标准CRC16(1021)余数表 CRC16-CCITT ISO HDLC, ITU X.25, x16+x12+x5+1 多项式
+    * 高位在先时生成多项式 Gm=0x11021 低位在先时生成多项式，Gm=0x8408 本例采用高位在先
+    */
+    private static int[] crc16_ccitt_table = { 
+0x0000, 0x1021, 0x2042, 0x3063, 0x4084, 0x50a5, 0x60c6, 0x70e7,
+0x8108, 0x9129, 0xa14a, 0xb16b, 0xc18c, 0xd1ad, 0xe1ce, 0xf1ef, 0x1231, 0x0210, 0x3273, 0x2252,
+0x52b5, 0x4294, 0x72f7, 0x62d6, 0x9339, 0x8318, 0xb37b, 0xa35a, 0xd3bd, 0xc39c, 0xf3ff, 0xe3de,
+0x2462, 0x3443, 0x0420, 0x1401, 0x64e6, 0x74c7, 0x44a4, 0x5485, 0xa56a, 0xb54b, 0x8528, 0x9509,
+0xe5ee, 0xf5cf, 0xc5ac, 0xd58d, 0x3653, 0x2672, 0x1611, 0x0630, 0x76d7, 0x66f6, 0x5695, 0x46b4,
+0xb75b, 0xa77a, 0x9719, 0x8738, 0xf7df, 0xe7fe, 0xd79d, 0xc7bc, 0x48c4, 0x58e5, 0x6886, 0x78a7,
+0x0840, 0x1861, 0x2802, 0x3823, 0xc9cc, 0xd9ed, 0xe98e, 0xf9af, 0x8948, 0x9969, 0xa90a, 0xb92b,
+0x5af5, 0x4ad4, 0x7ab7, 0x6a96, 0x1a71, 0x0a50, 0x3a33, 0x2a12, 0xdbfd, 0xcbdc, 0xfbbf, 0xeb9e,
+0x9b79, 0x8b58, 0xbb3b, 0xab1a, 0x6ca6, 0x7c87, 0x4ce4, 0x5cc5, 0x2c22, 0x3c03, 0x0c60, 0x1c41,
+0xedae, 0xfd8f, 0xcdec, 0xddcd, 0xad2a, 0xbd0b, 0x8d68, 0x9d49, 0x7e97, 0x6eb6, 0x5ed5, 0x4ef4,
+0x3e13, 0x2e32, 0x1e51, 0x0e70, 0xff9f, 0xefbe, 0xdfdd, 0xcffc, 0xbf1b, 0xaf3a, 0x9f59, 0x8f78,
+0x9188, 0x81a9, 0xb1ca, 0xa1eb, 0xd10c, 0xc12d, 0xf14e, 0xe16f, 0x1080, 0x00a1, 0x30c2, 0x20e3,
+0x5004, 0x4025, 0x7046, 0x6067, 0x83b9, 0x9398, 0xa3fb, 0xb3da, 0xc33d, 0xd31c, 0xe37f, 0xf35e,
+0x02b1, 0x1290, 0x22f3, 0x32d2, 0x4235, 0x5214, 0x6277, 0x7256, 0xb5ea, 0xa5cb, 0x95a8, 0x8589,
+0xf56e, 0xe54f, 0xd52c, 0xc50d, 0x34e2, 0x24c3, 0x14a0, 0x0481, 0x7466, 0x6447, 0x5424, 0x4405,
+0xa7db, 0xb7fa, 0x8799, 0x97b8, 0xe75f, 0xf77e, 0xc71d, 0xd73c, 0x26d3, 0x36f2, 0x0691, 0x16b0,
+0x6657, 0x7676, 0x4615, 0x5634, 0xd94c, 0xc96d, 0xf90e, 0xe92f, 0x99c8, 0x89e9, 0xb98a, 0xa9ab,
+0x5844, 0x4865, 0x7806, 0x6827, 0x18c0, 0x08e1, 0x3882, 0x28a3, 0xcb7d, 0xdb5c, 0xeb3f, 0xfb1e,
+0x8bf9, 0x9bd8, 0xabbb, 0xbb9a, 0x4a75, 0x5a54, 0x6a37, 0x7a16, 0x0af1, 0x1ad0, 0x2ab3, 0x3a92,
+0xfd2e, 0xed0f, 0xdd6c, 0xcd4d, 0xbdaa, 0xad8b, 0x9de8, 0x8dc9, 0x7c26, 0x6c07, 0x5c64, 0x4c45,
+0x3ca2, 0x2c83, 0x1ce0, 0x0cc1, 0xef1f, 0xff3e, 0xcf5d, 0xdf7c, 0xaf9b, 0xbfba, 0x8fd9, 0x9ff8,
+0x6e17, 0x7e36, 0x4e55, 0x5e74, 0x2e93, 0x3eb2, 0x0ed1, 0x1ef0 };
+ 
+    /**
+     * @param reg_init
+     *            CRC校验时初值
+     * @param message
+     *            校验值
+     * @return
+     */
+    private static int do_crc(int reg_init, byte[] message) {
+        int crc_reg = reg_init;
+        for (int i = 0; i &lt; message.length; i++) {
+          crc_reg = (crc_reg &gt;&gt; 8) ^ crc16_ccitt_table[(crc_reg ^ message[i]) &amp; 0xff];
+        }
+        return crc_reg;
+    }
+ 
+    /**
+     * 根据数据生成CRC校验码
+     * @param message
+     *            byte数据
+     * @return int 返校验码
+     */
+    public static int do_crc(byte[] message) {
+        // 计算CRC校验时初值从0x0000开始。
+        int crc_reg = 0x0000;
+        return do_crc(crc_reg, message);
+    }
+}
+基于C的CRC16算法样例：
+/**
+* CCITT标准CRC16(1021)余数表 CRC16-CCITT ISO HDLC, ITU X.25, x16+x12+x5+1 多项式
+* 高位在先时生成多项式 Gm=0x11021 低位在先时生成多项式，Gm=0x8408 本例采用高位在先
+*/
+const unsigned short crc16_table[256] = {
+    0x0000, 0x1021, 0x2042, 0x3063, 0x4084, 0x50a5, 0x60c6, 0x70e7,
+    0x8108, 0x9129, 0xa14a, 0xb16b, 0xc18c, 0xd1ad, 0xe1ce, 0xf1ef,
+    0x1231, 0x0210, 0x3273, 0x2252, 0x52b5, 0x4294, 0x72f7, 0x62d6,
+    0x9339, 0x8318, 0xb37b, 0xa35a, 0xd3bd, 0xc39c, 0xf3ff, 0xe3de,
+    0x2462, 0x3443, 0x0420, 0x1401, 0x64e6, 0x74c7, 0x44a4, 0x5485,
+    0xa56a, 0xb54b, 0x8528, 0x9509, 0xe5ee, 0xf5cf, 0xc5ac, 0xd58d,
+    0x3653, 0x2672, 0x1611, 0x0630, 0x76d7, 0x66f6, 0x5695, 0x46b4,
+    0xb75b, 0xa77a, 0x9719, 0x8738, 0xf7df, 0xe7fe, 0xd79d, 0xc7bc,
+    0x48c4, 0x58e5, 0x6886, 0x78a7, 0x0840, 0x1861, 0x2802, 0x3823,
+    0xc9cc, 0xd9ed, 0xe98e, 0xf9af, 0x8948, 0x9969, 0xa90a, 0xb92b,
+    0x5af5, 0x4ad4, 0x7ab7, 0x6a96, 0x1a71, 0x0a50, 0x3a33, 0x2a12,
+    0xdbfd, 0xcbdc, 0xfbbf, 0xeb9e, 0x9b79, 0x8b58, 0xbb3b, 0xab1a,
+    0x6ca6, 0x7c87, 0x4ce4, 0x5cc5, 0x2c22, 0x3c03, 0x0c60, 0x1c41,
+    0xedae, 0xfd8f, 0xcdec, 0xddcd, 0xad2a, 0xbd0b, 0x8d68, 0x9d49,
+    0x7e97, 0x6eb6, 0x5ed5, 0x4ef4, 0x3e13, 0x2e32, 0x1e51, 0x0e70,
+    0xff9f, 0xefbe, 0xdfdd, 0xcffc, 0xbf1b, 0xaf3a, 0x9f59, 0x8f78,
+    0x9188, 0x81a9, 0xb1ca, 0xa1eb, 0xd10c, 0xc12d, 0xf14e, 0xe16f,
+    0x1080, 0x00a1, 0x30c2, 0x20e3, 0x5004, 0x4025, 0x7046, 0x6067,
+    0x83b9, 0x9398, 0xa3fb, 0xb3da, 0xc33d, 0xd31c, 0xe37f, 0xf35e,
+    0x02b1, 0x1290, 0x22f3, 0x32d2, 0x4235, 0x5214, 0x6277, 0x7256,
+    0xb5ea, 0xa5cb, 0x95a8, 0x8589, 0xf56e, 0xe54f, 0xd52c, 0xc50d,
+    0x34e2, 0x24c3, 0x14a0, 0x0481, 0x7466, 0x6447, 0x5424, 0x4405,
+    0xa7db, 0xb7fa, 0x8799, 0x97b8, 0xe75f, 0xf77e, 0xc71d, 0xd73c,
+    0x26d3, 0x36f2, 0x0691, 0x16b0, 0x6657, 0x7676, 0x4615, 0x5634,
+    0xd94c, 0xc96d, 0xf90e, 0xe92f, 0x99c8, 0x89e9, 0xb98a, 0xa9ab,
+    0x5844, 0x4865, 0x7806, 0x6827, 0x18c0, 0x08e1, 0x3882, 0x28a3,
+    0xcb7d, 0xdb5c, 0xeb3f, 0xfb1e, 0x8bf9, 0x9bd8, 0xabbb, 0xbb9a,
+    0x4a75, 0x5a54, 0x6a37, 0x7a16, 0x0af1, 0x1ad0, 0x2ab3, 0x3a92,
+    0xfd2e, 0xed0f, 0xdd6c, 0xcd4d, 0xbdaa, 0xad8b, 0x9de8, 0x8dc9,
+    0x7c26, 0x6c07, 0x5c64, 0x4c45, 0x3ca2, 0x2c83, 0x1ce0, 0x0cc1,
+    0xef1f, 0xff3e, 0xcf5d, 0xdf7c, 0xaf9b, 0xbfba, 0x8fd9, 0x9ff8,
+    0x6e17, 0x7e36, 0x4e55, 0x5e74, 0x2e93, 0x3eb2, 0x0ed1, 0x1ef0
+};
+ 
+int do_crc(int reg_init, byte* data, int length){
+    int cnt;
+    int crc_reg = reg_init;
+    for (cnt = 0; cnt &lt; length; cnt++){
+        crc_reg = (crc_reg &gt;&gt; 8) ^ crc16_table[(crc_reg ^ *(data++)) &amp; 0xFF];
+    }
+    return crc_reg;
+}
+int main(int argc, char **argv) {
+    //FFFE011300000000用byte数组表示：
+    byte message[8] = {0xFF,0xFE,0x01,0x13,0x00,0x00,0x00,0x00};
+    // 计算CRC校验时初值从0x0000开始
+    int a = do_crc(0x0000, message, 8);
+    printf("a ==&gt; %x\n", a);
+}</code></pre><h3><span><strong>5.3. 结果码定义</strong></span></h3><table><colgroup><col width="90"><col width="181"><col width="140"><col width="492"></colgroup><tbody><tr><th colspan="1" rowspan="1" width="auto"><span>结果码</span></th><th colspan="1" rowspan="1" width="auto"><span>具体定义</span></th><th colspan="1" rowspan="1" width="auto"><span>响应指令</span></th><th colspan="1" rowspan="1" width="auto"><span>备注</span></th></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x00</span></td><td colspan="1" rowspan="1" width="auto"><span>允许升级/升级成功</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11/0x13</span></td><td colspan="1" rowspan="1" width="auto"><span>设备接收开始传包指令（0x11）返回0x00表示允许升级。 设备接收上报升级结果（0x13）返回0x00表示升级成功。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x01</span></td><td colspan="1" rowspan="1" width="auto"><span>设备使用中</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11</span></td><td colspan="1" rowspan="1" width="auto"><span>床垫：泵在工作、床垫需要停止工作、否则不进行升级。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x02</span></td><td colspan="1" rowspan="1" width="auto"><span>信号质量差</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11</span></td><td colspan="1" rowspan="1" width="auto"><span>IOT网关：通过获取RSSI值来判断与BLE设备连接信号质量，如果信号弱了会断连会自动启动扫描重连。如有必要，IOTA主控也可以根据从IOT网关获取到对应BLE设备的这个RSSI值来进行交互过程设计和功能实现。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x03</span></td><td colspan="1" rowspan="1" width="auto"><span>已是最新版本</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11</span></td><td colspan="1" rowspan="1" width="auto"></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x04</span></td><td colspan="1" rowspan="1" width="auto"><span>电量不足</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11/0x12</span></td><td colspan="1" rowspan="1" width="auto"><span>床垫：非电池供电、无此功能。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x05</span></td><td colspan="1" rowspan="1" width="auto"><span>剩余空间不足</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11/0x12</span></td><td colspan="1" rowspan="1" width="auto"><span>床垫：这点与内存不足类似，因为升级前已经判断了。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x06</span></td><td colspan="1" rowspan="1" width="auto"><span>下载超时</span></td><td colspan="1" rowspan="1" width="auto"><span>0x12</span></td><td colspan="1" rowspan="1" width="auto"><span>床垫：连接导致超时、导致数据出错、反复重发。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x07</span></td><td colspan="1" rowspan="1" width="auto"><span>升级包校验失败</span></td><td colspan="1" rowspan="1" width="auto"><span>0x12</span></td><td colspan="1" rowspan="1" width="auto"><span>IOT设备在正确接收OTA主控的每一帧数据后，在重启激活之前需要对升级包文件进行整体校验（避免遇到Flash坏道的问题）。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x08</span></td><td colspan="1" rowspan="1" width="auto"><span>升级包类型不支持</span></td><td colspan="1" rowspan="1" width="auto"><span>0x12</span></td><td colspan="1" rowspan="1" width="auto"><span>1.非BIN文件；2.非有效BIN文件（需对BIN文件进行真实性校验，建议：IOT 设备供应商采用 BIN 文件内写入自定义特征值方式来实现）</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x09</span></td><td colspan="1" rowspan="1" width="auto"><span>内存不足</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11/0x12</span></td><td colspan="1" rowspan="1" width="auto"><span>床垫：进行升级前主机下发固件文件的大小、从机进行判断是否够内存。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x0A</span></td><td colspan="1" rowspan="1" width="auto"><span>安装升级包失败</span></td><td colspan="1" rowspan="1" width="auto"><span>0x13</span></td><td colspan="1" rowspan="1" width="auto"></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x0B</span></td><td colspan="1" rowspan="1" width="auto"><span>数据帧CRC校验错误</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11/0x12/0x13</span></td><td colspan="1" rowspan="1" width="auto"><span>IOT设备需要对OTA主控发送过来的每帧数据（包括最后一帧）进行校验，当出现校验失败的时候反馈给OTA主控进行相应处理。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x0C</span></td><td colspan="1" rowspan="1" width="auto"><span>数据帧大小超出MTU</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11</span></td><td colspan="1" rowspan="1" width="auto"></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x0D</span></td><td colspan="1" rowspan="1" width="auto"><span>帧序号不匹配</span></td><td colspan="1" rowspan="1" width="auto"><span>0x12</span></td><td colspan="1" rowspan="1" width="auto"></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x0F</span></td><td colspan="1" rowspan="1" width="auto"><span>已处于 OTA 中</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11</span></td><td colspan="1" rowspan="1" width="auto"><span>举例:电动滑板：处于 OTA 中，再次收到车机/手机的开始传包消息。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x10</span></td><td colspan="1" rowspan="1" width="auto"><span>遥控器未连接</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11</span></td><td colspan="1" rowspan="1" width="auto"></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x11</span></td><td colspan="1" rowspan="1" width="auto"><span>遥控器电量不足</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11</span></td><td colspan="1" rowspan="1" width="auto"><span>遥控器电量＜20%</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x12</span></td><td colspan="1" rowspan="1" width="auto"><span>数据访问错误</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11</span></td><td colspan="1" rowspan="1" width="auto"><span>举例:宠物笼：文件损坏/无法打开、空间问题、文件系统错误。</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x13</span></td><td colspan="1" rowspan="1" width="auto"><span>卡识别错误</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11</span></td><td colspan="1" rowspan="1" width="auto"><span>举例:宠物笼：找不到卡/未插入、提示需要格式化、卡错误/未识别</span></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x7F</span></td><td colspan="1" rowspan="1" width="auto"><span>内部异常</span></td><td colspan="1" rowspan="1" width="auto"><span>0x11/0x12/0x13</span></td><td colspan="1" rowspan="1" width="auto"></td></tr><tr><td colspan="1" rowspan="1" width="auto"><span>0x80</span></td><td colspan="1" rowspan="1" width="auto"><span>升级任务不存在</span></td><td colspan="1" rowspan="1" width="auto"><span>0x12</span></td><td colspan="1" rowspan="1" width="auto"></td></tr></tbody></table><p><span> </span><span>表 5-6 结果码定义</span></p><h3><span>5.4.</span> <span><strong>Q&amp;A</strong></span></h3><p><span>1、如何区分A/B分区和备份分区升级激活方式？</span></p><p><span>回复：目前IoT设备OTA升级主要有两种激活方式，见章节4.1中功能定义。</span></p><p><span>备注：可根据IoT设备供应商的实际能力来实现其中一种激活方式，首选A/B分区。</span></p><p><span>2、目标升级固件版本号如何获取?</span></p><p><span>回复：从OTA服务器获取。</span></p><p><span>3、指令超时检测时间设置多少？</span></p><p><span>回复：车机端发送数据超时时间1.5s数据帧超时时间3s，超时补发3次，设备端也要加入超时判断，超时后直接退出OTA功能。</span></p><p><span>4、错误包是否重复发送？</span></p><p><span>回复：有超时重发机制。</span></p><p><span>5、数据帧跳帧如何处理？</span></p><p><span>回复：数据交互为应答机制，没有跳帧场景。</span></p><p><span>6、设备电量不足阈值是多少？</span></p><p><span>回复：由IoT设备自行确认，如不满足电量要求则在回复IOTA主控开始传包指令时返回0x04结果码。</span></p><p><span>7、数据接收超时或中断后如何处理？</span></p><p><span>回复：断连后退出OTA流程。</span></p><p><span>8、数据包的发送频率和大小是多少？</span></p><p><span>回复：大小可以通过MTU计算也可设置固定值。</span></p></article><div class="pager"><a href="322-错误码、常见问题与注意事项.html">← 错误码、常见问题与注意事项</a><a href="278-比亚迪智能设备云云对接协议.html">比亚迪智能设备云云对接协议 →</a></div>
+</main>
+</div>
+<footer>
+镜像站 · 内容采集自 <a href="https://openplatform.byd.com/" target="_blank" rel="noopener">openplatform.byd.com</a> ·
+版权归比亚迪汽车工业有限公司所有，本站仅为参赛者与开发者离线查阅便利而归档，如涉侵权请联系删除。
+</footer>
+</body>
+</html>

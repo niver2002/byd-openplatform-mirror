@@ -1,0 +1,10 @@
+{
+  "id": 138,
+  "documentType": 3,
+  "breadcrumb": [
+    "API库",
+    "概述"
+  ],
+  "sourceUrl": "https://openplatform.byd.com/#/developTools/apiLibDetails?id=138",
+  "html": "<p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">比亚迪致力于构建开放、共赢的智能汽车生态，为广大应用开发者提供了专业的车机应用接入平台。开发者可充分利用比亚迪提供的丰富系统资源与标准化的车机开放接口（API），高效开发并深度适配适用于比亚迪智能座舱的应用程序。</span></p><p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">开放API内容包括：车身、行驶数据、车速、能力模式、全景、空调、 PM2.5、雷达、充电设备、车辆设置等 18 类数据。</span></p><p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">各模块主要通过get、set、监听三种方式开放数据。 </span></p><p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">get 用于获取车辆状态数据， set 用于控制车辆和更改车辆设置项， 监听可以实时获取各模块数据的变化。</span></p><p style=\"line-height: 1.75;\"><span style=\"color: rgb(89, 89, 89); font-size: 16px; font-family: 微软雅黑;\">其中 set 接口的返回值，仅表示命令下发是否成功，需要通过监听接口确定设置是否成功。</span></p>"
+}
