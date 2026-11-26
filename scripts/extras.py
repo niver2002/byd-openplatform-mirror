@@ -154,6 +154,17 @@ def build_contest(root: str, snap: dict, contest_data: dict) -> dict:
             f'完整 HTML 见 <a href="captured/theme-competation-index.html">captured/theme-competation-index.html</a>。</div>'
             f'<pre style="white-space:pre-wrap;background:var(--code);padding:14px;border-radius:8px;font-size:13.5px;line-height:1.9">{esc(captured_txt)}</pre>'
         )
+    packs = ""
+    pack_manifest = load_json(os.path.join(outdir, "pack", "manifest.json"))
+    if pack_manifest:
+        packs = f"""
+<h2 id="pack">官方赛事资料包</h2>
+<p>比亚迪官方放出的《{esc(pack_manifest['fileName'])}》（原始压缩包 {lib.human_size(pack_manifest['zipBytes'])}）
+已完整解包入库，共 {pack_manifest['fileCount']} 个文件、{lib.human_size(pack_manifest['totalBytes'])}：
+内外饰车体图、座舱空间示意、LOGO 四联标、大赛设计说明、品牌字体、设计模板 `.pix`。</p>
+<p><a class="btn" href="pack/index.html">浏览 / 下载资料包</a></p>
+"""
+
     body = f"""
 <div class="hero">
   <h1>2026 比亚迪智能座舱设计大赛</h1>
@@ -163,6 +174,8 @@ def build_contest(root: str, snap: dict, contest_data: dict) -> dict:
 </div>
 
 {shot_html}
+
+{packs}
 
 <h2 id="announcement">赛事公告</h2>
 <ul>{ann_html}</ul>
@@ -233,14 +246,16 @@ def build_contest(root: str, snap: dict, contest_data: dict) -> dict:
 
 def contest_sidebar() -> str:
     links = [
+        ("#pack", "官方资料包"),
+        ("#shot", "官方页面快照"),
         ("#announcement", "赛事公告"),
         ("#tracks", "赛道设置"),
         ("#schedule", "赛程安排"),
         ("#docs", "官方赛事文档"),
         ("#resources", "赛事资料清单"),
-        ("#captured", "官方页面快照"),
+        ("#captured", "官方页面对照"),
         ("#files", "可下载文件"),
-        ("../downloads/index.html", "资料包下载"),
+        ("../downloads/index.html", "其它资料包"),
     ]
     items = "".join(f'<li><a href="{h}">{esc(t)}</a></li>' for h, t in links)
     return f'<aside><div class="sec">赛事目录</div><ul>{items}</ul></aside>'

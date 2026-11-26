@@ -42,15 +42,22 @@ $crawlArgs = @("$here/crawl.py", "--out", "$root/$Out",
     "--max-asset-mb", $MaxAssetMb, "--max-video-mb", $MaxVideoMb, "--budget-mb", $BudgetMb)
 if ($SkipMedia) { $crawlArgs += "--no-assets" }
 
-Write-Host "== 1/3 crawl documentation + API + media =="
+Write-Host "== 1/4 crawl documentation + API + media =="
 & $python @crawlArgs
 
+Write-Host "== 2/4 unpack official competition resource pack =="
+& $python "$here/pack.py" extract --out "$root/$Out/contest/pack" --clean
+if ($IsWindows -or $env:OS -eq 'Windows_NT') {
+    & pwsh -NoProfile -File "$here/make_thumbs.ps1" -Root "$root/$Out/contest/pack"
+}
+& $python "$here/pack.py" index --out "$root/$Out/contest/pack"
+
 if (-not $SkipCapture) {
-    Write-Host "== 2/3 capture rendered competition pages =="
+    Write-Host "== 3/4 capture rendered competition pages =="
     & $python "$here/capture_contest.py" "$root/$Out"
 }
 
-Write-Host "== 3/3 build home / contest / downloads / search / API bundle =="
+Write-Host "== 4/4 build home / contest / downloads / search / API bundle =="
 & $python "$here/extras.py" "$root/$Out"
 
 $size = (Get-ChildItem "$root/$Out" -Recurse -File | Measure-Object Length -Sum).Sum / 1MB

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T07:17:17.872505+00:00",
+  "generatedAt": "2026-11-26T07:31:46.064721+00:00",
   "source": "https://openplatform.byd.com",
   "sections": {
     "dev": 99,
@@ -7,7 +7,7 @@
     "api": 26
   },
   "assetCount": 367,
-  "assetBytes": 630865564,
+  "assetBytes": 319821165,
   "assets": [
     {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/0013e42b8bec4eed9f0e84bfb6d1827d.png",
@@ -118,12 +118,6 @@
       "originalName": "08e33c31fe4c467b837383a76fe4288a.png"
     },
     {
-      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/0917be2350224eb98fef00c5284547b5.mp4",
-      "path": "assets/0917be2350224eb98fef00c5284547b5-32c87e.mp4",
-      "size": 15874768,
-      "originalName": "0917be2350224eb98fef00c5284547b5.mp4"
-    },
-    {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/09586b29be3f485b8ca25547fdcef2de.png",
       "path": "assets/09586b29be3f485b8ca25547fdcef2de-da1c84.png",
       "size": 250101,
@@ -140,12 +134,6 @@
       "path": "assets/09e772a2825f428b8673f5932e223092-5823af.png",
       "size": 112248,
       "originalName": "09e772a2825f428b8673f5932e223092.png"
-    },
-    {
-      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/0a0361acb7284d4faf7cf8b9b1a22d30.mp4",
-      "path": "assets/0a0361acb7284d4faf7cf8b9b1a22d30-255c6b.mp4",
-      "size": 11829100,
-      "originalName": "0a0361acb7284d4faf7cf8b9b1a22d30.mp4"
     },
     {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/0a4d253ee0b64682aa89d44e5ea7885c.png",
@@ -472,12 +460,6 @@
       "originalName": "2f264845b2914049914446de257e755a.png"
     },
     {
-      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/2f70be5b6c0d4855aa6a1275df84bcfc.mp4",
-      "path": "assets/2f70be5b6c0d4855aa6a1275df84bcfc-b82072.mp4",
-      "size": 34208337,
-      "originalName": "2f70be5b6c0d4855aa6a1275df84bcfc.mp4"
-    },
-    {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/302b0cd583644b8cab1c35c565db0ef8.jpg",
       "path": "assets/302b0cd583644b8cab1c35c565db0ef8-e28563.jpg",
       "size": 102855,
@@ -518,12 +500,6 @@
       "path": "assets/355638a8c5c44dafa65dd7206cb7af50-09bfab.png",
       "size": 1010712,
       "originalName": "355638a8c5c44dafa65dd7206cb7af50.png"
-    },
-    {
-      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/35bc6c8088d54c72acd9e41e6b31dd03.mp4",
-      "path": "assets/35bc6c8088d54c72acd9e41e6b31dd03-e50711.mp4",
-      "size": 23175653,
-      "originalName": "35bc6c8088d54c72acd9e41e6b31dd03.mp4"
     },
     {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/35c089864fc742b0b4c5cc69e43666ea.png",
@@ -718,12 +694,6 @@
       "originalName": "489d5cf1c9494e87b69f9b610ce64c2d.png"
     },
     {
-      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/48c697af8b5a46ba92585fd015a045ec.mp4",
-      "path": "assets/48c697af8b5a46ba92585fd015a045ec-d9e8ed.mp4",
-      "size": 60617367,
-      "originalName": "48c697af8b5a46ba92585fd015a045ec.mp4"
-    },
-    {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/4a1ad4056aa54144a67516301d2d3e33.png",
       "path": "assets/4a1ad4056aa54144a67516301d2d3e33-4d55bc.png",
       "size": 757287,
@@ -776,12 +746,6 @@
       "path": "assets/507015e924ea40a19730c4ddf61a053e-00179d.png",
       "size": 220124,
       "originalName": "507015e924ea40a19730c4ddf61a053e.png"
-    },
-    {
-      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/51686a71f3864d5cb2778ce949f3f0ed.mp4",
-      "path": "assets/51686a71f3864d5cb2778ce949f3f0ed-c9b97d.mp4",
-      "size": 23353482,
-      "originalName": "51686a71f3864d5cb2778ce949f3f0ed.mp4"
     },
     {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/526dc73e2d7645d3a948a4c6b7eebdd4.png",
@@ -880,12 +844,6 @@
       "originalName": "5e61421a615e4306bfe6e2958090142e.png"
     },
     {
-      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/5eef37814a46489fba5dfffc874aa827.mp4",
-      "path": "assets/5eef37814a46489fba5dfffc874aa827-9f27e7.mp4",
-      "size": 15841566,
-      "originalName": "5eef37814a46489fba5dfffc874aa827.mp4"
-    },
-    {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/5f0dd57dc0164177aa46875453a975a4.jpg",
       "path": "assets/5f0dd57dc0164177aa46875453a975a4-3c066e.jpg",
       "size": 64171,
@@ -980,12 +938,6 @@
       "path": "assets/67604f178a564a949a3f34cf802adad3-c23e08.png",
       "size": 2936790,
       "originalName": "67604f178a564a949a3f34cf802adad3.png"
-    },
-    {
-      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/676a00ab5c9543c0a86a760f180013a1.mp4",
-      "path": "assets/676a00ab5c9543c0a86a760f180013a1-308238.mp4",
-      "size": 11430611,
-      "originalName": "676a00ab5c9543c0a86a760f180013a1.mp4"
     },
     {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/67e09513abf74cfbb2f89a25a2e48fa8.jpg",
@@ -1570,12 +1522,6 @@
       "originalName": "ba839dffa1254fe88861af9b7cba694b.jpg"
     },
     {
-      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/ba8ebb9087f645ba9dad28da75b84d17.mp4",
-      "path": "assets/ba8ebb9087f645ba9dad28da75b84d17-274a68.mp4",
-      "size": 22084814,
-      "originalName": "ba8ebb9087f645ba9dad28da75b84d17.mp4"
-    },
-    {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/bac97055807c409783bc12529e59be6d.png",
       "path": "assets/bac97055807c409783bc12529e59be6d-99c53c.png",
       "size": 234785,
@@ -1628,12 +1574,6 @@
       "path": "assets/c44e30b995df4faca43e9321e773e1cf-e120e9.png",
       "size": 14941,
       "originalName": "c44e30b995df4faca43e9321e773e1cf.png"
-    },
-    {
-      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/c7f85f3153fb489fb2dc2e54f6ea3765.mp4",
-      "path": "assets/c7f85f3153fb489fb2dc2e54f6ea3765-56b30a.mp4",
-      "size": 12886493,
-      "originalName": "c7f85f3153fb489fb2dc2e54f6ea3765.mp4"
     },
     {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/c9b47449f7aa4f9daafa70f35d5b0597.png",
@@ -1912,12 +1852,6 @@
       "originalName": "e6d9f50f8e944bcfa36dc941180334e6.png"
     },
     {
-      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/e87adc86f5dc4dfa8ac311b93d6db475.mp4",
-      "path": "assets/e87adc86f5dc4dfa8ac311b93d6db475-7a0a9f.mp4",
-      "size": 39791351,
-      "originalName": "e87adc86f5dc4dfa8ac311b93d6db475.mp4"
-    },
-    {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/e903a0fd755e45b8bc4a8af41d9ce57f.jpg",
       "path": "assets/e903a0fd755e45b8bc4a8af41d9ce57f-ab2afd.jpg",
       "size": 192419,
@@ -2104,12 +2038,6 @@
       "originalName": "fc1d463657ee4690a80abba5e2cc8021.png"
     },
     {
-      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/fd147517112546f0adec0d5151592918.mp4",
-      "path": "assets/fd147517112546f0adec0d5151592918-ed174d.mp4",
-      "size": 39950857,
-      "originalName": "fd147517112546f0adec0d5151592918.mp4"
-    },
-    {
       "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/ff7fa9c5af104ebd965f82187112fff0.png",
       "path": "assets/ff7fa9c5af104ebd965f82187112fff0-cc7755.png",
       "size": 454481,
@@ -2212,5 +2140,54 @@
       "originalName": "主题审核资料提供明细.xlsx"
     }
   ],
-  "omitted": []
+  "omitted": [
+    {
+      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/0917be2350224eb98fef00c5284547b5.mp4",
+      "reason": "too large (15.1 MB)"
+    },
+    {
+      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/0a0361acb7284d4faf7cf8b9b1a22d30.mp4",
+      "reason": "too large (11.3 MB)"
+    },
+    {
+      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/35bc6c8088d54c72acd9e41e6b31dd03.mp4",
+      "reason": "too large (22.1 MB)"
+    },
+    {
+      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/676a00ab5c9543c0a86a760f180013a1.mp4",
+      "reason": "too large (10.9 MB)"
+    },
+    {
+      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/5eef37814a46489fba5dfffc874aa827.mp4",
+      "reason": "too large (15.1 MB)"
+    },
+    {
+      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/48c697af8b5a46ba92585fd015a045ec.mp4",
+      "reason": "too large (57.8 MB)"
+    },
+    {
+      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/51686a71f3864d5cb2778ce949f3f0ed.mp4",
+      "reason": "too large (22.3 MB)"
+    },
+    {
+      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/ba8ebb9087f645ba9dad28da75b84d17.mp4",
+      "reason": "too large (21.1 MB)"
+    },
+    {
+      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/fd147517112546f0adec0d5151592918.mp4",
+      "reason": "too large (38.1 MB)"
+    },
+    {
+      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/c7f85f3153fb489fb2dc2e54f6ea3765.mp4",
+      "reason": "too large (12.3 MB)"
+    },
+    {
+      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/e87adc86f5dc4dfa8ac311b93d6db475.mp4",
+      "reason": "too large (37.9 MB)"
+    },
+    {
+      "url": "https://openplatform-cdn.byd.com/dop/document-admin/document/2f70be5b6c0d4855aa6a1275df84bcfc.mp4",
+      "reason": "too large (32.6 MB)"
+    }
+  ]
 }
