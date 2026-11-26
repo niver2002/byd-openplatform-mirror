@@ -1,0 +1,100 @@
+name: Mirror BYD Open Platform
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_asset_mb:
+        description: "单个附件/图片下载体积上限 (MB)"
+        required: false
+        default: "45"
+      max_video_mb:
+        description: "单个视频收录上限 (MB)，超过则只在清单里留原始链接"
+        required: false
+        default: "15"
+      skip_media:
+        description: "只抓文字、跳过图片视频（true/false）"
+        required: false
+        default: "false"
+      capture_pages:
+        description: "用无头浏览器渲染赛事页面快照（true/false）"
+        required: false
+        default: "true"
+  schedule:
+    # 每周一 03:17 UTC 自动刷新一次
+    - cron: "17 3 * * 1"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/crawl.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: mirror
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Install Chromium for page snapshots
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.capture_pages == 'true' }}
+        run: |
+          python -m playwright install --with-deps chromium
+
+      - name: Crawl documentation, API library and contest data
+        env:
+          MAX_ASSET_MB: ${{ inputs.max_asset_mb || '45' }}
+          MAX_VIDEO_MB: ${{ inputs.max_video_mb || '15' }}
+        run: |
+          FLAGS="--max-asset-mb ${MAX_ASSET_MB} --max-video-mb ${MAX_VIDEO_MB}"
+          if [ "${{ inputs.skip_media }}" = "true" ]; then FLAGS="$FLAGS --no-assets"; fi
+          python scripts/crawl.py --out docs $FLAGS
+
+      - name: Capture rendered competition pages
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.capture_pages == 'true' }}
+        continue-on-error: true
+        run: python scripts/render_site.py docs
+
+      - name: Build home, contest hub, downloads, search and API bundle
+        run: python scripts/extras.py docs
+
+      - name: Report size
+        run: |
+          echo "### 镜像体积" >> $GITHUB_STEP_SUMMARY
+          du -sh docs || true
+          du -sh docs/assets docs/downloads docs/raw 2>/dev/null || true
+          echo "" >> $GITHUB_STEP_SUMMARY
+          find docs -type f | wc -l | xargs echo "文件数:" >> $GITHUB_STEP_SUMMARY
+
+      - name: Commit mirrored content
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A docs
+          if git diff --cached --quiet; then
+            echo "没有内容变化"
+          else
+            git commit -m "chore(mirror): refresh content $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push origin HEAD:main
+          fi
