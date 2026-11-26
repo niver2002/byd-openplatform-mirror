@@ -173,9 +173,9 @@ def build_contest(root: str, snap: dict, contest_data: dict) -> dict:
   · 采集时间 {esc(datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC'))}</p>
 </div>
 
-{shot_html}
-
 {packs}
+
+{shot_html}
 
 <h2 id="announcement">赛事公告</h2>
 <ul>{ann_html}</ul>
@@ -247,13 +247,13 @@ def build_contest(root: str, snap: dict, contest_data: dict) -> dict:
 def contest_sidebar() -> str:
     links = [
         ("#pack", "官方资料包"),
-        ("#shot", "官方页面快照"),
+        ("#shot", "整屏截图"),
         ("#announcement", "赛事公告"),
         ("#tracks", "赛道设置"),
         ("#schedule", "赛程安排"),
         ("#docs", "官方赛事文档"),
         ("#resources", "赛事资料清单"),
-        ("#captured", "官方页面对照"),
+        ("#captured", "正文快照"),
         ("#files", "可下载文件"),
         ("../downloads/index.html", "其它资料包"),
     ]
